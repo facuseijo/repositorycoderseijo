@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 5px;
+    padding: 5px 5px;
+    font: 13px/22px Helvetica, Arial, sans-serif;
+    background: #F0F0F0;
+}
+
+/*header gral*/
+header > .contenedor img {
+    height: 100px;
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+}
+
+header > .contenedor > h1 {
+    display: inline-block;
+    bottom: 25px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*barra de nav gral*/
+nav {
+    margin: 0 0 20px 0;
+}
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+nav > ul > li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Cambia el color del enlace a #111 (negro) al pasar el mouse */
+nav > ul > li > a:hover {
+    background-color: #111;
+}
+
+ /* Queda en otro el color el enlace que ya haya visitado en #111 (negro)  */
+nav > ul > li > a:visited {
+        background-color: #222;
+        color:rgb(209, 207, 207)
+
+}
+
+aside {
+    float: left;
+    margin: 0 1.5%;
+    width: 30%;
+}
+
+section .iframelario {
+    float: right;
+    margin: 0 1.5%;
+    width: 63%;
+}
+
+aside .familia p img {
+    height: 130px;
+}
+h1 {
+    margin: 5px;
+}
+h2 {
+    margin: 20px 0;
+}
+/*footer gral*/
+footer {
+    clear: both;
+    background-color: #333;
+    padding: 20px;
+    position: relative;
+    top: 20px;
+    color: white;
+    text-align: right;
+}
+
+footer .footer-contact img {
+    height: 20px;
+    margin: -5px 5px
+}
+/*pagina logistica*/
+.logistica img {
+     height: 100px;
+     border: solid 1px black;
+}
+
+.logistica {
+     display:grid;
+      grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+      grid-template-areas:"rapido ciudad" "eficiencia horario"; 
+      column-gap: 10px;
+      row-gap: 10px;
+ }
+.rapido{
+     grid-area: rapido;
+} 
+.atodalaciudad{
+      grid-area: ciudad;    
+}
+.eficiencia{
+     grid-area: eficiencia;
+}
+.hsdeatencion{
+     grid-area: horario;
+}
+.rapido-img, .atodalaciudad-img, .eficienica-img, .hsdeatencion-img {
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+} 
+/*pagina productos*/
+.productos{
+     display:grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr;
+     grid-template-areas:"paleta cocido natural"
+     "salamines salame crudo" "cantimpalo lomo panceta" "bocha holanda reggiano"; 
+     column-gap: 10px;
+     row-gap: 10px;
+}
+.paletacagnoli{
+    grid-area: paleta;
+} 
+.cocidocagnoli{
+    grid-area: cocido;
+} 
+.naturalcagnoli{
+    grid-area: natural;
+} 
+.salaminescagnoli{
+    grid-area: salamines;
+} 
+.salamechacra{
+    grid-area: salame;
+}
+ .crudoweber{
+    grid-area: crudo;
+}
+ .cantimpalolario{
+    grid-area: cantimpalo;
+}
+.lomolario{
+    grid-area: lomo;
+}
+ .pancetabierzo{
+    grid-area: panceta;
+}
+ .bochacalchaqui{
+    grid-area: bocha;
+}
+ .holandavarense{
+    grid-area: holanda;
+} 
+.reggianosilvia{
+    grid-area: reggiano;
+} 
+/*falta cambiar a las imagenes originales*/
+.paletacagnoli-img, .cocidocagnoli-img, .naturalcagnoli-img, .lomolario-img, .bochacalchaqui-img, .pancetabierzo-img,
+.salaminescagnoli-img, .salamechacra-img, .crudoweber-img, .cantimpalolario-img, .holandavarense-img, .reggianosilvia-img {
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+}
+
