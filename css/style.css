@@ -7,7 +7,7 @@ body {
     margin: 5px;
     padding: 5px 5px;
     font: 13px/22px Helvetica, Arial, sans-serif;
-    background: #F0F0F0;
+    background: rgba(0,0,0,.08)
 }
 
 /*header gral*/
@@ -79,9 +79,22 @@ aside .familia p img {
 }
 h1 {
     margin: 5px;
+    color:#2b4870;
+    font-weight: 400;
+    font-size: 45px;
 }
 h2 {
-    margin: 20px 0;
+    margin: 10px 0;
+    color:#1f3f6d;
+    font-weight: 350;  
+    font-size: 40px;
+    line-height: 70px;
+    letter-spacing: 0px;
+}
+p{
+    color:#73848e;
+    font-weight: 300;
+    font-size: 25px;
 }
 /*footer gral*/
 footer {
@@ -113,8 +126,7 @@ footer .footer-contact img {
       row-gap: 10px;
  }
 .rapido{
-     grid-area: rapido;
-} 
+     grid-area: rapido} 
 .atodalaciudad{
       grid-area: ciudad;    
 }
@@ -182,4 +194,14 @@ footer .footer-contact img {
     height:100%;
     object-fit:cover;
 }
+/*pagina nosotros*/
+.nosotrosmain {
+    display:grid;
+    grid-template-columns: auto auto auto;
 
+}
+.valores, .mision, .vision {
+width: 350px;
+height:280px;
+text-align:center;
+}
