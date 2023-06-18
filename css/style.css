@@ -1,3 +1,5 @@
+/*font-family:'Dancing Script', cursive;
+font-family: 'Alfa Slab One', cursive;*/
 * {
     margin: 0;
     padding: 0;
@@ -6,25 +8,54 @@
 body {
     margin: 5px;
     padding: 5px 5px;
-    font: 13px/22px Helvetica, Arial, sans-serif;
-    background: rgba(0,0,0,.08)
+    margin: 5px;
+    background-color: rgba(0,0,0,0.10);
+}
+h1{
+    font-family: 'Alfa Slab One';
+    margin: 10px 0;
+    color:#1f3f6d;
+    font-weight: 550;  
+    font-size: 48px;
+    letter-spacing: 0px;
+}
+h2 {
+    font-family: 'Dancing Script', cursive;
+    margin: 10px 0;
+    color:#1f3f6d;
+    font-weight: 500;  
+    font-size: 40px;
+    letter-spacing: 0px;
+}
+p{
+    font-family: 'Dancing Script', cursive;
+    color:#73848e;
+    font-weight: 400;
+    font-size: 25px;
+}
+.contenedor{
+display: inline-block;
+bottom: 25px;
+display:flex;
+flex-direction:row;
+justify-content: space-evenly;
 }
 
 /*header gral*/
 header > .contenedor img {
-    height: 100px;
+    height: 84px;
     display:flex;
-    flex-direction:row;
-    justify-content: flex-start;
 }
 
 header > .contenedor > h1 {
+    font-family:  'Alfa Slab One';
+    font-weight: 550;
+    font-size: 48px;
     display: inline-block;
     bottom: 25px;
     display:flex;
     flex-direction:row;
-    justify-content: space-evenly;
-    align-items: center;
+   
 }
 /*barra de nav gral*/
 nav {
@@ -58,7 +89,7 @@ nav > ul > li > a:hover {
  /* Queda en otro el color el enlace que ya haya visitado en #111 (negro)  */
 nav > ul > li > a:visited {
         background-color: #222;
-        color:rgb(209, 207, 207)
+        color:rgb(150, 148, 148)
 
 }
 
@@ -77,25 +108,7 @@ section .iframelario {
 aside .familia p img {
     height: 130px;
 }
-h1 {
-    margin: 5px;
-    color:#2b4870;
-    font-weight: 400;
-    font-size: 45px;
-}
-h2 {
-    margin: 10px 0;
-    color:#1f3f6d;
-    font-weight: 350;  
-    font-size: 40px;
-    line-height: 70px;
-    letter-spacing: 0px;
-}
-p{
-    color:#73848e;
-    font-weight: 300;
-    font-size: 25px;
-}
+
 /*footer gral*/
 footer {
     clear: both;
@@ -114,13 +127,13 @@ footer .footer-contact img {
 /*pagina logistica*/
 .logistica img {
      height: 100px;
-     border: solid 1px black;
+    
 }
 
 .logistica {
      display:grid;
-      grid-template-columns: 1fr 1fr;
-     grid-template-rows: 1fr 1fr;
+      grid-template-columns: auto auto;
+     grid-template-rows: auto auto;
       grid-template-areas:"rapido ciudad" "eficiencia horario"; 
       column-gap: 10px;
       row-gap: 10px;
@@ -137,8 +150,8 @@ footer .footer-contact img {
      grid-area: horario;
 }
 .rapido-img, .atodalaciudad-img, .eficienica-img, .hsdeatencion-img {
-    width: 100%;
-    height:100%;
+    width: 250px;
+    height:250px;
     object-fit:cover;
 } 
 /*pagina productos*/
@@ -190,18 +203,55 @@ footer .footer-contact img {
 /*falta cambiar a las imagenes originales*/
 .paletacagnoli-img, .cocidocagnoli-img, .naturalcagnoli-img, .lomolario-img, .bochacalchaqui-img, .pancetabierzo-img,
 .salaminescagnoli-img, .salamechacra-img, .crudoweber-img, .cantimpalolario-img, .holandavarense-img, .reggianosilvia-img {
-    width: 100%;
-    height:100%;
+    width: 250px;
+    height:250px;
     object-fit:cover;
 }
+
+
+
 /*pagina nosotros*/
 .nosotrosmain {
     display:grid;
-    grid-template-columns: auto auto auto;
-
+    grid-template-columns:25% 75%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas:"nosotros inostros" "historia ihistoria" 
+    "valores ivalores" "mision imision" "vision ivision"; 
+    column-gap: 10px;
+    row-gap: 10px;
 }
-.valores, .mision, .vision {
-width: 350px;
-height:280px;
-text-align:center;
+.nosotros {
+     grid-area: nosotros;
+}
+.imagennosotros {
+    grid-area: inosotros;
+}
+.imagenhistoria{
+    grid-area: ihistoria;
+}
+.imagenvalores{
+    grid-area: ivalores;
+}
+.imagenmision{
+    grid-area: imision;
+}
+.imagenvision{
+    grid-area: ivision;
+}
+.historia {
+     grid-area: historia;
+    }
+.valores {
+     grid-area: valores;
+}   
+.mision {
+     grid-area: mision;
+}    
+.vision {
+     grid-area: vision;
+}   
+.imagennosotros-img, .imagenhistoria-img, .imagenvalores-img, .imagenmision-img, .imagenvision-img {
+    width: 180px;
+    height:180px; 
+    object-fit:cover;
 }
