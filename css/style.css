@@ -213,45 +213,57 @@ footer .footer-contact img {
 /*pagina nosotros*/
 .nosotrosmain {
     display:grid;
-    grid-template-columns:25% 75%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    grid-template-areas:"nosotros inostros" "historia ihistoria" 
-    "valores ivalores" "mision imision" "vision ivision"; 
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:"nosotros inostros" "ihistoria historia" 
+    "valores ivalores" "imision mision" "vision ivision"; 
     column-gap: 10px;
     row-gap: 10px;
+    padding:20px
+}
+.imagennosotros img {
+     grid-area: inosotros;
+     width:100%;
+     height:100%;
+}
+.imagenhistoria img {
+     grid-area: ihistoria;
+     width:100%;
+     height:100%;
+}
+.imagenvalores img {
+     grid-area: ivalores; 
+     width:100%;
+     height:100%;
+}
+.imagenmision img {
+     grid-area: imision;
+     width:100%;
+     width:100%;
+     height:100%;
+}
+.imagenvision img{
+     grid-area: ivision;
+     width:100%;
+     height:100%;
 }
 .nosotros {
-     grid-area: nosotros;
-}
-.imagennosotros {
-    grid-area: inosotros;
-}
-.imagenhistoria{
-    grid-area: ihistoria;
-}
-.imagenvalores{
-    grid-area: ivalores;
-}
-.imagenmision{
-    grid-area: imision;
-}
-.imagenvision{
-    grid-area: ivision;
+    grid-area: nosotros;
+    text-align: center;
 }
 .historia {
      grid-area: historia;
-    }
+     text-align:center;
+}
 .valores {
      grid-area: valores;
+     text-align: center;
 }   
 .mision {
      grid-area: mision;
+     text-align: center;
 }    
 .vision {
      grid-area: vision;
+     text-align: center;
 }   
-.imagennosotros-img, .imagenhistoria-img, .imagenvalores-img, .imagenmision-img, .imagenvision-img {
-    width: 180px;
-    height:180px; 
-    object-fit:cover;
-}
