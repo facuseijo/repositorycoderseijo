@@ -12,7 +12,7 @@ body {
     background-color: rgba(0,0,0,0.10);
 }
 h1{
-    font-family: 'Alfa Slab One';
+    font-family:'Alfa Slab One';
     color:#1f3f6d;
     font-size: 40px;
 }
@@ -49,10 +49,13 @@ header .contenedor img {
     display:flex;
 }
 
-header .contenedor > h1 {
+/*no estpy pudiendo solucionar el por que
+el peso del h1 en index es diferente*/
+header .contenedor h1 {
     display: inline-block;
     display:flex;
     flex-direction:row;
+    font-weight: normal;
 }
 /*barra de nav gral*/
 
