@@ -79,12 +79,12 @@ header .contenedor h1 {
 
 /* Cambia el color del enlace a #111 (negro) al pasar el mouse */
 .navbarra ul li > a:hover {
-    background-color: #111;
+    background-color: #493434;
 }
 
  /* Queda en otro el color el enlace que ya haya visitado en #111 (negro)  */
 .navbarra ul li > a:visited {
-        background-color: #222;
+        background-color: #000000;
         color:rgb(150, 148, 148)
 
 }
@@ -96,6 +96,15 @@ header .contenedor h1 {
     flex-direction:row;
     justify-content:flex-end;
 }
+
+ @media (max-width: 576px){
+        .footgral ul{
+             display: flex;
+             flex-direction: column;
+             justify-content: flex-end;  
+       }
+}
+ 
 .footgral ul  li  a {
    display: block;
    color: white;
@@ -179,6 +188,26 @@ header .contenedor h1 {
       column-gap: 10px;
       row-gap: 10px;
 }
+.logisticaarticle {
+     display:flex;
+     flex-direction: column;
+     padding-left: 5px;
+}
+@media (max-width: 576px){
+     .logisticaarticle{
+        display: block;
+      background-color: #b8afaf;
+     }
+}
+@media (max-width: 576px){
+     .logistica{
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr;
+     background-color: #b8afaf;
+     display: block;
+    }
+}
+
 .rapido{
      grid-area: rapido} 
 .atodalaciudad{
@@ -215,17 +244,32 @@ header .contenedor h1 {
      grid-template-rows: 1fr 1fr 1fr 1fr;
      grid-template-areas:"paleta cocido natural"
      "salamines salame crudo" "cantimpalo lomo panceta" "bocha holanda reggiano"; 
-     column-gap: 10px;
-     row-gap: 10px;
+     column-gap: 5px;
+     row-gap: 5px;
+}
+@media (max-width: 576px){
+    .productos{
+    display:block;
+   background-color: #b8afaf;
+   }
+}
+
+.productos div a{
+     border:solid 2px rgba(73, 73, 87, 0.967);
+     background-color:rgb(150, 148, 148);
+     color:white;
+}
+.productos a:hover {
+        background-color: #111;
 }
 .paletacagnoli{
     grid-area: paleta;
 } 
 .cocidocagnoli{
-    grid-area: cocido;
+     grid-area: cocido;
 } 
 .naturalcagnoli{
-    grid-area: natural;
+     grid-area: natural;
 } 
 .salaminescagnoli{
     grid-area: salamines;
@@ -233,10 +277,10 @@ header .contenedor h1 {
 .salamechacra{
     grid-area: salame;
 }
- .crudoweber{
+.crudoweber{
     grid-area: crudo;
 }
- .cantimpalolario{
+.cantimpalolario{
     grid-area: cantimpalo;
 }
 .lomolario{
@@ -257,9 +301,9 @@ header .contenedor h1 {
 /*falta cambiar a las imagenes originales*/
 .paletacagnoli-img, .cocidocagnoli-img, .naturalcagnoli-img, .lomolario-img, .bochacalchaqui-img, .pancetabierzo-img,
 .salaminescagnoli-img, .salamechacra-img, .crudoweber-img, .cantimpalolario-img, .holandavarense-img, .reggianosilvia-img {
-    width: 250px;
-    height:250px;
-    object-fit:cover;
+    width: 200px;
+    height:200px;
+
 }
 
 /*pagina nosotros*/
