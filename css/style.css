@@ -42,6 +42,12 @@ display:flex;
 flex-direction:row;
 justify-content: space-evenly;
 }
+@media (max-width: 576px){
+    .contenedor{
+       display: block;
+     background-color: #b8afaf;
+    }
+}
 
 /*header gral*/
 header .contenedor img {
@@ -68,6 +74,11 @@ header .contenedor h1 {
     display:flex;
     flex-direction:row;
     justify-content: space-around;
+}
+@media (max-width: 576px){
+    .navbarra {
+       display: block;
+    }
 }
 .navbarra ul  li  a {
     display: block;
