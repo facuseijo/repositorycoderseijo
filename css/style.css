@@ -76,7 +76,7 @@ header .contenedor h1 {
     justify-content: space-around;
 }
 @media (max-width: 576px){
-    .navbarra {
+    .navbarra ul{
        display: block;
     }
 }
