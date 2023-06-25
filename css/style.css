@@ -75,6 +75,8 @@ el peso del h1 del index es distinto me parece se heredo
 @media (max-width: 576px){
     .navbarra ul{
        display: block;
+       width:100%;
+       height:250px;
     }
 }
 .navbarra ul  li  a {
@@ -84,16 +86,17 @@ el peso del h1 del index es distinto me parece se heredo
     padding: 14px 16px;
     text-decoration: none;
 }
-
+/*ver falla en spmbreado encor*/
 /* Cambia el color del enlace a #111 (negro) al pasar el mouse */
-.navbarra ul li > a:hover {
-    background-color: #493434;
+.navbarra ul li a:hover {
+     background-color: #000000;
 }
 
  /* Queda en otro el color el enlace que ya haya visitado en #111 (negro)  */
-.navbarra ul li > a:visited {
-        background-color: #000000;
+.navbarra ul li a:visited {
+       background-color: #493434;
         color:rgb(150, 148, 148)
+
 
 }
 /*footer gral*/
@@ -312,8 +315,8 @@ el peso del h1 del index es distinto me parece se heredo
 /*falta cambiar a las imagenes originales*/
 .paletacagnoli-img, .cocidocagnoli-img, .naturalcagnoli-img, .lomolario-img, .bochacalchaqui-img, .pancetabierzo-img,
 .salaminescagnoli-img, .salamechacra-img, .crudoweber-img, .cantimpalolario-img, .holandavarense-img, .reggianosilvia-img {
-    width: 200px;
-    height:200px;
+    width: 70px;
+    height:70px;
 
 }
 
