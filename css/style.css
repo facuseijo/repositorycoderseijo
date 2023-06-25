@@ -30,11 +30,17 @@ h3 {
     font-weight: 500;  
     font-size: 25px;
 }
+h5{
+    
+    font-family:'Alfa Slab One';
+    color:#1f3f6d;
+    font-size: 18px;
+}
 p{
     font-family: 'Dancing Script', cursive;
     color:#73848e;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 23px;
 }
 
 /*header gral*/
@@ -249,76 +255,19 @@ el peso del h1 del index es distinto me parece se heredo
     justify-content:flex-start;
     width: 60%;
 }
-/*pagina productos*/
-.productos{
-     display:grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 1fr 1fr 1fr 1fr;
-     grid-template-areas:"paleta cocido natural"
-     "salamines salame crudo" "cantimpalo lomo panceta" "bocha holanda reggiano"; 
-     column-gap: 5px;
-     row-gap: 5px;
-     color: white;
-     text-decoration: none;
+/*pagina productos  ver poner gap*/
+
+.row1mio div, .row2mio div, .row3mio div {
+     background-color:rgba(206, 198, 198, 0.967);
 }
-@media (max-width: 576px){
-    .productos{
-    display:block;
-   background-color: #b8afaf;
-   }
+.card1mia a, .card2mia a, .card3mia a, .card4mia a, .card5mia a, .card6mia a, .card7mia a, .card8mia a, .card9mia a, .card10mia a, .card11mia a, .card12mia a{
+    background-color:#1f3f6d;
+    border-color:#1f3f6d;
 }
 
-.productos div a{
-     border:solid 2px rgba(73, 73, 87, 0.967);
-     background-color:rgb(150, 148, 148);
-     color:white;
-}
-.productos a:hover {
-        background-color: #111;
-}
-.paletacagnoli{
-    grid-area: paleta;
-} 
-.cocidocagnoli{
-     grid-area: cocido;
-} 
-.naturalcagnoli{
-     grid-area: natural;
-} 
-.salaminescagnoli{
-    grid-area: salamines;
-} 
-.salamechacra{
-    grid-area: salame;
-}
-.crudoweber{
-    grid-area: crudo;
-}
-.cantimpalolario{
-    grid-area: cantimpalo;
-}
-.lomolario{
-    grid-area: lomo;
-}
-.pancetabierzo{
-    grid-area: panceta;
-}
-.bochacalchaqui{
-    grid-area: bocha;
-}
-.holandavarense{
-    grid-area: holanda;
-} 
-.reggianosilvia{
-    grid-area: reggiano;
-} 
 /*falta cambiar a las imagenes originales*/
-.paletacagnoli-img, .cocidocagnoli-img, .naturalcagnoli-img, .lomolario-img, .bochacalchaqui-img, .pancetabierzo-img,
-.salaminescagnoli-img, .salamechacra-img, .crudoweber-img, .cantimpalolario-img, .holandavarense-img, .reggianosilvia-img {
-    width: 70px;
-    height:70px;
 
-}
+
 
 /*pagina nosotros*/
 .nosotrosmain {
