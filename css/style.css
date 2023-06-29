@@ -150,8 +150,9 @@ el peso del h1 del index es distinto me parece se heredo
     text-align: center;
 }
 .salaminportada img{
-    width:1310px;
-    height:280px;
+    width:99%;
+    height:700px;
+    object-fit:cover;
 }
 .jamonesindex {
     grid-area: jamonesin;
@@ -160,6 +161,8 @@ el peso del h1 del index es distinto me parece se heredo
 .jamonesindex img{
         width:100%;
         height:140px;
+        object-fit:cover;
+
 }
 .salazonesindex {
     grid-area: salazonesin;
@@ -169,6 +172,7 @@ el peso del h1 del index es distinto me parece se heredo
         grid-area: salazonesin;
         width:100%;
         height:120px;
+        object-fit:cover;
 }
 .quesos {
      grid-area: quesosin;
@@ -183,9 +187,19 @@ el peso del h1 del index es distinto me parece se heredo
         text-align: center;
 }
 .chacinadosyembutidos img{
-     width:96%;
+     width:100%;
      height:500px;
 }
+
+.carouselindex {
+    height: 60%;
+    overflow: hidden;
+ }
+  
+
+
+
+/*videoabajoindex*/
 
 .iframelario {
     display:flex;
@@ -269,7 +283,6 @@ el peso del h1 del index es distinto me parece se heredo
      margin: 10px;
      padding-left: 30px;
 }
-
 @media (max-width: 576px){
     .row1mio, .row2mio, .row3mio{
       flex-direction: column;
@@ -295,34 +308,40 @@ el peso del h1 del index es distinto me parece se heredo
      grid-area: inosotros;
      width:100%;
      height:100%;
+     border-radius: 200px;
+    
 }
 .imagenhistoria img {
      grid-area: ihistoria;
      width:100%;
      height:100%;
+     border-radius: 100%;
 }
 .imagenvalores img {
      grid-area: ivalores; 
      width:100%;
      height:100%;
+     border-radius: 200px;
 }
 .imagenmision img {
      grid-area: imision;
      width:100%;
      height:100%;
+     border-radius: 100%;
 }
 .imagenvision img{
      grid-area: ivision;
      width:100%;
      height:100%;
+     border-radius: 200px;
 }
 .nosotros {
     grid-area: nosotros;
-    text-align: center;
+    text-align: left;
 }
 .historia {
      grid-area: historia;
-     text-align:center;
+     text-align:right;
 }
 .valores {
      grid-area: valores;
@@ -330,9 +349,9 @@ el peso del h1 del index es distinto me parece se heredo
 }   
 .mision {
      grid-area: mision;
-     text-align: center;
+     text-align: left;
 }    
 .vision {
      grid-area: vision;
-     text-align: center;
+     text-align: right;
 }   
