@@ -11,38 +11,43 @@ body {
      padding: 5px 5px;
      margin: 5px;
      background-color: rgba(0,0,0,0.10)!important;
-     background-color: #465fcf;
+     
 }
 h1{
     font-family:'Alfa Slab One';
-    color:#1f3f6d;
-    font-size: 40px !important;
+    color:#123565;
+    font-size: 35px !important;
 }
 h2 {
     font-family: 'Dancing Script', cursive;
     margin: 10px 0;
-    color:#1f3f6d;
+    color:#153562;
     font-weight: 500;  
-    font-size: 30px;
+    font-size: 28px;
 }
 h3 {
     font-family: 'Dancing Script', cursive;
     margin: 10px 0;
     color:#1f3f6d;
     font-weight: 500;  
-    font-size: 25px;
+    font-size: 23px;
+}
+h4{
+    font-family:'Alfa Slab One';
+    color:white;
+    font-size: 21px;
 }
 h5{
     
     font-family:'Alfa Slab One';
     color:#1f3f6d;
-    font-size: 18px;
+    font-size: 19px;
 }
 p{
     font-family: 'Dancing Script', cursive;
     color:#73848e;
     font-weight: 400;
-    font-size: 23px;
+    font-size: 22px;
 }
 /*barra nav*/
 .logo img{
@@ -58,6 +63,9 @@ p{
 
 .barrabristol ul{
      margin-left:30px;
+}
+.barrabristol ul a{
+    color: white;
 }
 .barrabristol ul li a :hover {
     background-color: #1b519bce;
@@ -77,11 +85,11 @@ p{
 /*footer gral*/
 .footgral ul{
     list-style-type: none;
-    background-color: #333;
+    background-color: #465fcf;
     display:flex;
     flex-direction:row;
     justify-content:flex-end;
-    color:white 
+    color:white;
 }
 
  @media (max-width: 576px){
@@ -100,7 +108,7 @@ p{
 }
 .footgral img {
    height: 20px;
-   margin: -5px 5px
+   margin: -5px 5px;
 }
 /*index cambiar altura*/
 .indexmain{
@@ -167,16 +175,11 @@ p{
      overflow: hidden;
  }
 
-  
-
-
-
 /*videoabajoindex*/
 
 .iframelario {
     display:flex;
     width: 60%;
-
 }
 .iframelario h3{
         display:flex;
@@ -186,7 +189,6 @@ p{
 /*pagina logistica*/
 .logistica img {
      height: 100px;
-    
 }
 
 .logistica {
@@ -234,21 +236,38 @@ p{
     object-fit:cover;
 } 
 /*paginacontactos*/
+
 .prcontacto {
     display:flex;
     flex-direction:column;
     justify-content:flex-start;
     padding: 0 0 0 15px;
+    background-color: #223ebb;
+    color:white;
 }
 .mapacontacto{
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    width: 60%;
+     display:flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items:center;
 }
+.contactoh1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px;
+ }
+
 /*pagina productos*/
+
+.prodh1{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin:45px;
+}
 .container-fluidprod{
-    background-color: #465fcf;
+     background-color: #223ebb;
      padding: 15px;
 }
 
