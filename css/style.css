@@ -45,11 +45,20 @@ p{
     font-size: 23px;
 }
 /*barra nav*/
-
+.logo img{
+    width:50px;
+    height:45px;
+}
 .barrabristol{
     background-color: #465fcf;
 }
+.barratitulo{
+    margin-top:8px;
+}
 
+.barrabristol ul{
+     margin-left:30px;
+}
 .barrabristol ul li a :hover {
     background-color: #1b519bce;
 }
