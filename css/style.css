@@ -168,11 +168,22 @@ p{
      height:500px;
 }
 
-.containercarouselin{
+.contcarouselin{
      width:100%;
      padding:20px;
      background-color: #465fcf;
      overflow: hidden;
+ }
+ .rowlog{
+   display:flex;
+   flex-direction: column;
+   align-content: center;
+   align-items: center;
+ }
+ .carancho div img{
+     height:400px;
+     width:100%;
+     object-fit: cover;
  }
 
 /*videoabajoindex*/
@@ -187,56 +198,53 @@ p{
 }
 
 /*pagina logistica*/
-.logistica img {
-     height: 100px;
+
+.logisticarticle{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin:45px;
+}
+.container-fluidlogistic{
+      background-color: #223ebb;
+      padding: 15px;
 }
 
-.logistica {
-     display:grid;
-      grid-template-columns: auto auto;
-     grid-template-rows: auto auto;
-      grid-template-areas:"rapido ciudad" "eficiencia horario"; 
-      column-gap: 10px;
-      row-gap: 10px;
+.rowlogistic{
+      column-gap: 30px;
+      row-gap: 20px;
+       margin: 10px;
+      padding-left: 30px;
 }
-.logisticaarticle {
-     display:flex;
-     flex-direction: column;
-     padding-left: 5px;
+
+.rowlogistic div {
+      background-color:rgba(206, 198, 198, 0.967);
+}
+
+.card1log, .card2log, .card3log, .card4log{
+      border-radius: none;
+      overflow:hidden;
+}
+.contcarousellog{
+      width:100%;
+      padding:20px;
+      background-color: #223ebb;
+      overflow: hidden; 
+}
+.rowconcar{
+      display:flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      width:700px;
 }
 @media (max-width: 576px){
-     .logisticaarticle{
-        display: block;
-      background-color: #b8afaf;
-     }
-}
-@media (max-width: 576px){
-     .logistica{
-     grid-template-columns: 1fr;
-     grid-template-rows: 1fr 1fr 1fr 1fr;
-     background-color: #b8afaf;
-     display: block;
+     .rowconcar{
+        width:100%; 
     }
 }
 
-.rapido{
-     grid-area: rapido} 
-.atodalaciudad{
-      grid-area: ciudad;    
-}
-.eficiencia{
-     grid-area: eficiencia;
-}
-.hsdeatencion{
-     grid-area: horario;
-}
-.rapido-img, .atodalaciudad-img, .eficienica-img, .hsdeatencion-img {
-    width: 250px;
-    height:250px;
-    object-fit:cover;
-} 
 /*paginacontactos*/
-
 .prcontacto {
      display:flex;
      flex-direction:column;
