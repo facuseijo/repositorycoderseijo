@@ -58,28 +58,28 @@ p{
     background-color: #465fcf;
 }
 .barratitulo{
-    margin-top:8px;
+     margin-top:8px;
+     color:  #43c4f3ce;
 }
 
 .barrabristol ul{
      margin-left:30px;
 }
 .barrabristol ul a{
-    color: white;
+     color: white;
 }
 .barrabristol ul li a :hover {
-    background-color: #1b519bce;
+     background-color: #1b519bce;
 }
-.barrabristol ul li a :visited {
-    background-color:  #185dbece;
-     color:rgb(40, 35, 35)
+.barrabristol ul li :visited {
+     color:  #43c4f3ce;
 }
 .btnnav{
-    background-color: #1f3f6d;
-    color: white;
-    border-radius:200px;
-    border-radius: 15%;
-    border-color: #1f3f6d;
+     background-color: #1f3f6d;
+     color: white;
+     border-radius:200px;
+     border-radius: 15%;
+     border-color: #1f3f6d;
 }
 
 /*footer gral*/
@@ -238,12 +238,13 @@ p{
 /*paginacontactos*/
 
 .prcontacto {
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    padding: 0 0 0 15px;
-    background-color: #223ebb;
-    color:white;
+     display:flex;
+     flex-direction:column;
+     justify-content:flex-start;
+     padding: 0 0 0 15px;
+     background-color: #223ebb;
+     color:white;
+     padding: 15px;
 }
 .mapacontacto{
      display:flex;
@@ -251,11 +252,23 @@ p{
      justify-content: center;
      align-items:center;
 }
+@media (max-width: 576px){
+     .mapacontacto div iframe {
+         display: inline;
+         margin:10px;
+         padding:25px;
+         width:100%;
+    }
+}
 .contactoh1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 35px;
+    margin: 22px;
+ }
+ .formu{
+     margin: 25px;
+     color: #223ebb;
  }
 
 /*pagina productos*/
