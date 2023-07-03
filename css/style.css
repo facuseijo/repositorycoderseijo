@@ -16,7 +16,7 @@ body {
 h1{
     font-family:'Alfa Slab One';
     color:#123565;
-    font-size: 35px !important;
+    font-size: 31px!important;
 }
 h2 {
     font-family: 'Dancing Script', cursive;
@@ -116,7 +116,8 @@ p{
 .salaminportad {
       display:flex;
       flex-direction:column;
-      
+      background-color: #223ebb;
+      color:white; 
 }
 .salaminportad img{
     width:100%;
@@ -124,34 +125,40 @@ p{
     overflow:hidden;
     height:650px;
 }
-
--------------------
-.indexm{
-     display:grid;
-     grid-template-columns: 40% 60%;
-     grid-template-rows:45% 25% 30%;
-     grid-template-areas:
-                "jamonesin chacinadosin" 
-                "salazonesin chacinadosin"
-                "quesosin chacinadosin";
-     column-gap: 10px;
-     row-gap: 10px;
+.salaminportad H1{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
-.jamonesindex {
+-------------------
+.index{
+      display:grid;
+      grid-template-columns: 40% 60%;
+      grid-template-rows:45% 25% 30%;
+      grid-template-areas:"jamonesin chacinadosin" 
+                          "salazonesin chacinadosin"
+                          "quesosin chacinadosin";
+      column-gap: 10px;
+      row-gap: 10px;
+      margin: 30px;
+}
+.jamones {
     grid-area: jamonesin;
     text-align: center;
 }
-.jamonesindex img{
+.jamones img{
         width:100%;
         height:140px;
+        border-radius:20px;
 }
-.salazonesindex {
+.salazones {
     grid-area: salazonesin;
     text-align: center;
 }
-.salazonesindex img{
+.salazones img{
         width:100%;
         height:120px;
+        border-radius:20px;
 }
 .quesos {
      grid-area: quesosin;
@@ -160,30 +167,33 @@ p{
 .quesos img{
      width:100%;
      height:150px;
+     border-radius:20px;
 }
 .chacinados {
         grid-area: chacinadosin;
         text-align: center;
 }
 .chacinados img{
-     width:96%;
-     height:500px;
+     width:100%;
+     height:530px;
+     border-radius:20px;
 }
 -------------------
 .contcarouselin{
      width:100%;
-     padding:20px;
-     background-color: #465fcf;
+     background-color: #223ebb;
      overflow: hidden;
  }
- .rowlog{
+ .rowcarousel{
    display:flex;
    flex-direction: column;
    align-content: center;
    align-items: center;
+   background-color: #223ebb;
+   padding:30px;
  }
- .carancho div img{
-     height:400px;
+ .rowcarousel div img{
+     height:370px;
      width:100%;
      object-fit: cover;
  }
