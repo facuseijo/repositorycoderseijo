@@ -110,63 +110,35 @@ p{
    height: 20px;
    margin: -5px 5px;
 }
-/*index cambiar altura*/
-.indexmain{
-     display:grid;
-     grid-template-columns: 35% 65%;
-     grid-template-rows:30% 25% 20% 25%;
-     grid-template-areas:"salaminin salaminin"
-                         "jamonesin chacinadosin" 
-                         "salazonesin chacinadosin"
-                         "quesosin chacinadosin";
-     column-gap: 10px;
-     row-gap: 10px;
-}
+
+/*index pagina*/
+
 .salaminportada {
-    grid-area: salaminin;
-    text-align: center;
+      display:flex;
+      flex-direction:column;
 }
 .salaminportada img{
-    width:99%;
-    height:700px;
+    width:100%;
     object-fit:cover;
+    overflow:hidden;
 }
-.jamonesindex {
-    grid-area: jamonesin;
-    text-align: center;
-}
-.jamonesindex img{
-        width:100%;
-        height:140px;
-        object-fit:cover;
 
+
+.rowindex div {
+     background-color:rgba(206, 198, 198, 0.967);
 }
-.salazonesindex {
-    grid-area: salazonesin;
-    text-align: center;
+
+.rowindex{
+     column-gap: 40px;
+     row-gap: 20px;
+     margin: 10px;
+     padding-left: 30px;
 }
-.salazonesindex img{
-        grid-area: salazonesin;
-        width:100%;
-        height:120px;
-        object-fit:cover;
+.indexmain{
+     background-color: #223ebb;
 }
-.quesos {
-     grid-area: quesosin;
-     text-align: center;
-}
-.quesos img{
-     width:100%;
-     height:150px;
-}
-.chacinadosyembutidos {
-        grid-area: chacinadosin;
-        text-align: center;
-}
-.chacinadosyembutidos img{
-     width:100%;
-     height:500px;
-}
+
+
 
 .contcarouselin{
      width:100%;
@@ -196,6 +168,12 @@ p{
         display:flex;
         padding-left: 8px;
 }
+@media (max-width: 576px){
+      .iframelario{
+      display:none;
+    }
+}
+
 
 /*pagina logistica*/
 
@@ -216,7 +194,9 @@ p{
        margin: 10px;
       padding-left: 30px;
 }
-
+.rowlogistic div h4 {
+      color:#1f3f6d;
+}
 .rowlogistic div {
       background-color:rgba(206, 198, 198, 0.967);
 }
@@ -306,11 +286,11 @@ p{
      padding-left: 30px;
 }
 @media (max-width: 576px){
-    .row1mio, .row2mio, .row3mio{
-      flex-direction: column;
-     align-items: center;
-    }
-}
+     .row1mio, .row2mio, .row3mio{
+       flex-direction: column;
+      align-items: center;
+     }
+ }
 /*falta cambiar a las imagenes originales*/
 
 
@@ -322,24 +302,32 @@ p{
    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:"nosotros inostros" "ihistoria historia" 
     "valores ivalores" "imision mision" "vision ivision"; 
-    column-gap: 10px;
-    row-gap: 10px;
-    padding:10px;
+    column-gap: 5px;
+    row-gap: 5px;
+    padding-top:5px;
+    margin-right: 5px;
 }
-.valores, .mision, .vision{
-      background-color: #465fcf;
+.nosotrosmain p{
+      color: #f8f3f3;
+      margin:10px;
+}
+.nosotrosmain h5{
+     color: #f8f3f3;
+     margin:20px;
+}
+.valores, .mision, .vision, .nosotros, .historia{
+      background-color: #223ebb;
       color: #f8f3f3;
 } 
-.valores p, .mision p, .vision p{
-     color: #f8f3f3;
+.imagenhistoria, .imagennosotros, .imagenvalores, .imagenvision, .imagenmision{
+      background-color: #223ebb;
+      color: #f8f3f3;
 }
 .imagennosotros img {
-     grid-area: inosotros;
-     width:100%;
-     height:100%;
-     border-radius: 200px;
-     
-    
+      grid-area: inosotros;
+      width:100%;
+      height:100%;
+      border-radius: 200px;
 }
 .imagenhistoria img {
      grid-area: ihistoria;
@@ -374,17 +362,14 @@ p{
      text-align:right;
 }
 .valores {
-    background-color: #465fcf;
      grid-area: valores;
      text-align: center;
 }   
 .mision {
-    background-color: #465fcf;
      grid-area: mision;
      text-align: left;
 }    
 .vision {
-    background-color: #465fcf;
      grid-area: vision;
      text-align: right;
 }   
