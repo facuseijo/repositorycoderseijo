@@ -55,11 +55,13 @@ p{
     height:45px;
 }
 .barrabristol{
-    background-color: #465fcf;
+    
+    position: fixed;
+    z-index: 80;
 }
 .barratitulo{
      margin-top:8px;
-     color:  #43c4f3ce;
+     color:  white;
 }
 
 .barrabristol ul{
@@ -69,7 +71,7 @@ p{
      color: white;
 }
 .barrabristol ul li a :hover {
-     background-color: #1b519bce;
+     background-color: #1d6ddcce;
 }
 .barrabristol ul li :visited {
      color:  #43c4f3ce;
@@ -83,9 +85,12 @@ p{
 }
 
 /*footer gral*/
+.footgral, .barrabristol{
+      background: linear-gradient(90deg, rgb(108, 100, 75) 0%, rgba(247, 145, 80, 0.66) 50%, rgb(4, 184, 213) 100%);
+      box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
+}
 .footgral ul{
     list-style-type: none;
-    background-color: #465fcf;
     display:flex;
     flex-direction:row;
     justify-content:flex-end;
@@ -184,6 +189,13 @@ p{
      background-color: #223ebb;
      overflow: hidden;
  }
+ @media (max-width: 576px){
+        .letraenblock{
+             display: flex;
+             flex-direction: column;
+             justify-content:center;  
+       }
+}
  .rowcarousel{
    display:flex;
    flex-direction: column;
