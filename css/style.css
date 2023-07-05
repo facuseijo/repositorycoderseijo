@@ -77,11 +77,11 @@ p{
      color:  #43c4f3ce;
 }
 .btnnav{
-     background-color: #1f3f6d;
+     background-color: #3a85bc;
      color: white;
      border-radius:200px;
      border-radius: 15%;
-     border-color: #1f3f6d;
+     border-color: #91abd0;
 }
 
 /*footer gral*/
@@ -121,7 +121,7 @@ p{
 .salaminportad {
       display:flex;
       flex-direction:column;
-      background-color: #223ebb;
+      background-color: rgba(4, 144, 213, 0.88);
       color:white; 
 }
 .salaminportad img{
@@ -186,7 +186,7 @@ p{
 -------------------
 .contcarouselin{
      width:100%;
-     background-color: #223ebb;
+     background-color: rgba(4, 144, 213, 0.88);
      overflow: hidden;
  }
  @media (max-width: 576px){
@@ -201,7 +201,7 @@ p{
    flex-direction: column;
    align-content: center;
    align-items: center;
-   background-color: #223ebb;
+   background-color: rgba(4, 144, 213, 0.88);
    padding:30px;
  }
  .rowcarousel div img{
@@ -236,7 +236,7 @@ p{
       margin:45px;
 }
 .container-fluidlogistic{
-      background-color: #223ebb;
+     background-color: rgba(4, 144, 213, 0.88);
       padding: 15px;
 }
 
@@ -260,7 +260,7 @@ p{
 .contcarousellog{
       width:100%;
       padding:20px;
-      background-color: #223ebb;
+      background-color: rgba(4, 144, 213, 0.88);
       overflow: hidden; 
 }
 .rowconcar{
@@ -282,7 +282,7 @@ p{
      flex-direction:column;
      justify-content:flex-start;
      padding: 0 0 0 15px;
-     background-color: #223ebb;
+     background-color: rgba(4, 144, 213, 0.88);
      color:white;
      padding: 15px;
 }
@@ -308,7 +308,6 @@ p{
  }
  .formu{
      margin: 25px;
-     color: #223ebb;
  }
 
 /*pagina productos*/
@@ -320,7 +319,7 @@ p{
      margin:45px;
 }
 .container-fluidprod{
-     background-color: #223ebb;
+     background-color: rgba(4, 144, 213, 0.88);
      padding: 15px;
 }
 
@@ -328,7 +327,7 @@ p{
      background-color:rgba(206, 198, 198, 0.967);
 }
 .card1mia a, .card2mia a, .card3mia a, .card4mia a, .card5mia a, .card6mia a, .card7mia a, .card8mia a, .card9mia a, .card10mia a, .card11mia a, .card12mia a{
-    background-color:#1f3f6d;
+     background-color: #5199af;
     border-color:#1f3f6d;
 }
 .row1mio, .row2mio, .row3mio{
