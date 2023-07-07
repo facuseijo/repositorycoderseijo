@@ -1,0 +1,126 @@
+/*index pagina*/
+.salaminportad {
+    display:flex;
+    flex-direction:column;
+    background-color: rgba(4, 144, 213, 0.88);
+    color:white; 
+}
+.salaminportad img{
+  width:100%;
+  object-fit:cover;
+  overflow:hidden;
+  height:650px;
+}
+.salaminportad H1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.index{
+    display:grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows:45% 25% 30%;
+    grid-template-areas:"jamonesin chacinadosin" 
+                        "salazonesin chacinadosin"
+                        "quesosin chacinadosin";
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 30px;
+}
+@media (max-width: 576px){
+   .index{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;  
+  }
+}
+
+.jamones img:hover, .salazones img:hover, .quesos img:hover , .chacinados img:hover{
+   transform: scale(1.03);
+}  
+.jamones {
+  grid-area: jamonesin;
+  text-align: center;
+}
+.jamones img{
+      opacity:9;
+      width:100%;
+      height:190px;
+      border-radius:20px;
+      transition:all 0.6s;
+}
+.salazones {
+  grid-area: salazonesin;
+  text-align: center;
+}
+.salazones img{
+      opacity: .9;
+      width:100%;
+      height:160px;
+      border-radius:20px;
+      transition:all 0.6s;
+}
+.quesos {
+   grid-area: quesosin;
+   text-align: center;
+}
+.quesos img{
+   opacity: .9;
+   width:100%;
+   height:160px;
+   border-radius:20px;
+   transition:all 0.6s;
+}
+.chacinados {
+      grid-area: chacinadosin;
+      text-align: center;
+}
+.chacinados img{
+   opacity: .9;
+   width:100%;
+   height:530px;
+   border-radius:20px;
+   transition:all 0.6s;
+}
+.contcarouselin{
+   width:100%;
+   background-color: rgba(4, 144, 213, 0.88);
+   overflow: hidden;
+}
+@media (max-width: 576px){
+      .letraenblock{
+           display: flex;
+           flex-direction: column;
+           justify-content:center;  
+     }
+}
+.rowcarousel{
+ display:flex;
+ flex-direction: column;
+ align-content: center;
+ align-items: center;
+ background-color: rgba(4, 144, 213, 0.88);
+ padding:30px;
+}
+.rowcarousel div img{
+   height:370px;
+   width:100%;
+   object-fit: cover;
+}
+
+/*videoabajoindex*/
+
+.iframelario {
+  display:flex;
+  width: 60%;
+}
+.iframelario h3{
+      display:flex;
+      padding-left: 8px;
+}
+@media (max-width: 576px){
+    .iframelario{
+    display:none;
+  }
+}

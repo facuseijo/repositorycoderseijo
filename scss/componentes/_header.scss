@@ -1,0 +1,39 @@
+/*header barra nav*/
+
+.barrabristol{
+     position: fixed;
+     z-index: 80;
+     background: linear-gradient(90deg, rgb(108, 100, 75) 0%, rgba(247, 145, 80, 0.66) 50%, rgb(4, 184, 213) 100%);
+     box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
+    ul{
+        margin-left:30px;
+        li
+            &:visited {
+            color: #43c4f3ce;
+            a{
+               color: white;
+               &:hover{
+                  background-color: #1d6ddcce;
+
+                  
+                }
+            }
+        } 
+    }
+}
+
+.logo img{
+     width:50px;
+     height:45px;
+}
+.barratitulo{
+     margin-top:8px;
+     color:  white;
+}
+.btnnav{
+     background-color: #3a85bc;
+     color: white;
+     border-radius:200px;
+     border-radius: 15%;
+     border-color: #91abd0;
+}
