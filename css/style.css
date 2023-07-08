@@ -8,6 +8,9 @@
 .barrabristol ul {
   margin-left: 30px;
 }
+.barrabristol ul li {
+  color: white;
+}
 .barrabristol ul li:visited {
   color: rgba(67, 196, 243, 0.8078431373);
 }
@@ -74,18 +77,23 @@
   background-color: rgba(4, 144, 213, 0.88);
   color: white;
 }
-
 .salaminportad img {
   width: 100%;
   object-fit: cover;
   overflow: hidden;
   height: 650px;
 }
-
 .salaminportad H1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
+}
+.salaminportad H4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #123565;
 }
 
 .index {
@@ -97,14 +105,15 @@
   row-gap: 10px;
   margin: 30px;
 }
-
-@media (max-width: 576px) {
-  .index {
+@media screen and (max-width: 576px) {
+  .index div {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
+
 .jamones img:hover, .salazones img:hover, .quesos img:hover, .chacinados img:hover {
   transform: scale(1.03);
 }
@@ -113,7 +122,6 @@
   grid-area: jamonesin;
   text-align: center;
 }
-
 .jamones img {
   opacity: 9;
   width: 100%;
@@ -126,7 +134,6 @@
   grid-area: salazonesin;
   text-align: center;
 }
-
 .salazones img {
   opacity: 0.9;
   width: 100%;
@@ -139,7 +146,6 @@
   grid-area: quesosin;
   text-align: center;
 }
-
 .quesos img {
   opacity: 0.9;
   width: 100%;
@@ -152,7 +158,6 @@
   grid-area: chacinadosin;
   text-align: center;
 }
-
 .chacinados img {
   opacity: 0.9;
   width: 100%;
@@ -166,14 +171,14 @@
   background-color: rgba(4, 144, 213, 0.88);
   overflow: hidden;
 }
-
 @media screen and (max-width: 576px) {
-  .letraenblock {
+  .contcarouselin .letraenblock {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
+
 .rowcarousel {
   display: flex;
   flex-direction: column;
@@ -182,7 +187,6 @@
   background-color: rgba(4, 144, 213, 0.88);
   padding: 30px;
 }
-
 .rowcarousel div img {
   height: 370px;
   width: 100%;
@@ -194,17 +198,16 @@
   display: flex;
   width: 60%;
 }
-
 .iframelario h3 {
   display: flex;
   padding-left: 8px;
 }
-
-@media (max-width: 576px) {
-  .iframelario {
+@media screen and (max-width: 576px) {
+  .iframelario .iframelario {
     display: none;
   }
 }
+
 /*nosotros pagina*/
 .prcontacto {
   display: flex;
@@ -222,15 +225,15 @@
   justify-content: center;
   align-items: center;
 }
-
 @media screen and (max-width: 576px) {
-  div iframe {
+  .mapacontacto div iframe {
     display: inline;
     margin: 10px;
     padding: 25px;
     width: 100%;
   }
 }
+
 .contactoh1 {
   display: flex;
   flex-direction: column;
@@ -261,13 +264,11 @@
   margin: 10px;
   padding-left: 30px;
 }
-
-.rowlogistic div h4 {
-  color: #1f3f6d;
-}
-
 .rowlogistic div {
   background-color: rgba(206, 198, 198, 0.967);
+}
+.rowlogistic h4 {
+  color: #1f3f6d;
 }
 
 .card1log, .card2log, .card3log, .card4log {
@@ -290,7 +291,6 @@
   align-items: center;
   width: 700px;
 }
-
 @media screen and (max-width: 576px) {
   .rowconcar {
     width: 100%;
@@ -307,36 +307,36 @@
   padding-top: 5px;
   margin-right: 5px;
 }
-
-@media (max-width: 576px) {
+.nosotrosmain p {
+  margin: 10px;
+  color: white;
+}
+.nosotrosmain h5 {
+  margin: 20px;
+  color: white;
+}
+@media screen and (max-width: 576px) {
   .nosotrosmain div {
     flex-direction: column;
     align-items: center;
   }
 }
+
 /*ver responsive mediaq nosotros que falla*/
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .nosotrosmain div {
-    display: block;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .nosotrosmain section {
-    display: block;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
-.nosotrosmain p {
-  margin: 10px;
-  color: white;
-}
-
-.nosotrosmain h5 {
-  margin: 20px;
-  color: white;
-}
-
 .valores, .mision, .vision, .nosotros, .historia {
   background-color: rgba(4, 144, 213, 0.88);
   color: white;
@@ -407,12 +407,6 @@
   text-align: right;
 }
 
-@media (max-width: 576px) {
-  .row1mio, .row2mio, .row3mio {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 /*productos pagina*/
 .prodh1 {
   display: flex;
@@ -426,10 +420,6 @@
   padding: 15px;
 }
 
-.row1mio div, .row2mio div, .row3mio div {
-  background-color: rgba(206, 198, 198, 0.967);
-}
-
 .card1mia a, .card2mia a, .card3mia a, .card4mia a, .card5mia a, .card6mia a, .card7mia a, .card8mia a, .card9mia a, .card10mia a, .card11mia a, .card12mia a {
   background-color: #5199af;
   border-color: #1f3f6d;
@@ -441,13 +431,16 @@
   margin: 10px;
   padding-left: 30px;
 }
-
 @media screen and (max-width: 576px) {
-  .row1mio, .row2mio, .row3mio {
+  .row1mio .row1mio, .row1mio .row2mio, .row1mio .row3mio, .row2mio .row1mio, .row2mio .row2mio, .row2mio .row3mio, .row3mio .row1mio, .row3mio .row2mio, .row3mio .row3mio {
     flex-direction: column;
     align-items: center;
   }
+  .row1mio .row1mio div, .row1mio .row2mio div, .row1mio .row3mio div, .row2mio .row1mio div, .row2mio .row2mio div, .row2mio .row3mio div, .row3mio .row1mio div, .row3mio .row2mio div, .row3mio .row3mio div {
+    background-color: rgba(206, 198, 198, 0.967);
+  }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -462,42 +455,40 @@ body {
 }
 
 h1 {
-  font-family: "Alfa Slab One";
+  font: normal 31px "Alfa Slab One" !important;
   color: #123565;
-  font-size: 31px !important;
 }
 
 h2 {
-  font-family: "Dancing Script", cursive;
+  font: "Dancing Script", cursive;
   margin: 10px 0;
   color: #123565;
-  font-weight: 500;
-  color: #123565;
+  font: 500;
   font-size: 28px;
 }
 
 h3 {
-  font-family: "Dancing Script", cursive;
+  font: "Dancing Script", cursive;
   margin: 10px 0;
   color: #123565;
-  font-weight: 500;
+  font: 500;
   font-size: 23px;
 }
 
 h4 {
-  font-family: "Alfa Slab One";
+  font: normal 31px "Alfa Slab One";
   color: white;
   font-size: 21px;
 }
 
 h5 {
-  font-family: "Alfa Slab One";
+  font: normal 31px "Alfa Slab One";
   color: #123565;
-  font-size: 19px;
+  font: 19px;
 }
 
 p {
-  font-family: "Dancing Script", cursive;
+  font: "Dancing Script", cursive;
   color: #73848e;
   font-weight: 400;
   font-size: 22px;

@@ -21,42 +21,39 @@ body {
      margin: 5px;
      padding: 5px 5px;
      margin:6px;
-     background-color: rgba(0,0,0,0.10)!important;
-     
-}
-h1{
-    font-family:'Alfa Slab One';
-    color:#123565;
-    font-size: 31px!important;
-}
-h2 {
-    font-family: 'Dancing Script', cursive;
-    margin: 10px 0;
-    color:#123565;
-    font-weight: 500;  
-    color:#123565;
-    font-size: 28px;
-}
-h3 {
-    font-family: 'Dancing Script', cursive;
-    margin: 10px 0;
-    color:#123565;
-    font-weight: 500;  
-    font-size: 23px;
-}
-h4{
-    font-family:'Alfa Slab One';
-    color:white;
-    font-size: 21px;
-}
-h5{
-    font-family:'Alfa Slab One';
-    color:#123565;
-    font-size: 19px;
-}
-p{
-    font-family: 'Dancing Script', cursive;
-    color:#73848e;
-    font-weight: 400;
-    font-size: 22px;
-}
+     background-color: rgba(0,0,0,0.10)!important; 
+     }
+      h1{
+         font:$font-title!important;
+         color:$color-titulo;
+        }
+      h2 {
+         font:$font-texto;
+         margin: 10px 0;
+         color:$color-titulo;
+         font:$font-weighth;  
+         font-size: 28px;
+        }
+      h3 {
+         font:$font-texto;
+         margin: 10px 0;
+         color:$color-titulo;
+         font:$font-weighth;  
+         font-size: 23px;
+        }
+      h4{
+         font:$font-title;
+         color:$color-textop2;
+         font-size: 21px;
+        }
+      h5{
+         font:$font-title;
+         color:$color-titulo;
+         font:$font-size5;
+         }
+       p{
+         font:$font-texto;
+         color:$color-textop;
+         font-weight: 400;
+         font-size: 22px;
+         }

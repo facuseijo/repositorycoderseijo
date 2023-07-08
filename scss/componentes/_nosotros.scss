@@ -8,37 +8,38 @@
     row-gap: 5px;
     padding-top:5px;
     margin-right: 5px;
-}
-
-@media (max-width: 576px){
- .nosotrosmain div{
-  flex-direction: column;
- align-items: center;
- }
-}
+      p{
+           margin:10px;
+           color: white; 
+     }      
+      h5{
+           margin:20px;
+           color: white; 
+     }         
+  @include media-mob(sm){
+     div{
+           flex-direction: column;
+           align-items: center;
+          }
+     }
+}     
 /*ver responsive mediaq nosotros que falla*/
-@media (max-width: 576px){
+@include media-mob(sm){
      .nosotrosmain div{
-      display: block;
-      align-items: center;
+           display: flex;
+           flex-direction: column;
+           justify-content:center;  
      }
 }
  
-@media (max-width: 576px){
+@include media-mob(sm){
      .nosotrosmain section{
-      display: block;
-      align-items: center;
+           display: flex;
+           flex-direction: column;
+           justify-content:center;  
      }
 }
         
-.nosotrosmain p{
-      margin:10px;
-      color: white; 
-}
-.nosotrosmain h5{
-      margin:20px;
-      color: white; 
-}
 .valores, .mision, .vision, .nosotros, .historia{
       background-color: rgba(4, 144, 213, 0.88);
        color: white; 
@@ -97,9 +98,3 @@
      grid-area: vision;
      text-align: right;
 } 
-@media (max-width: 576px){
-     .row1mio, .row2mio, .row3mio{
-       flex-direction: column;
-      align-items: center;
-     }
- }

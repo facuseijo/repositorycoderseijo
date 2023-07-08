@@ -10,15 +10,14 @@
          margin-left: 30px;
  
          li {
+             color: white;
              &:visited {
                  color: #43c4f3ce;
- 
+
                  a {
                      color: white;
- 
                      &:hover {
                          background-color: #1d6ddcce;
- 
  
                      }
                  }
