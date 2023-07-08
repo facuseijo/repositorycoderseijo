@@ -23,7 +23,7 @@
     margin: 10px;
     padding-left: 30px;
 }
-@media (max-width: 576px){
+@include media-mob(sm){
     .row1mio, .row2mio, .row3mio{
       flex-direction: column;
      align-items: center;

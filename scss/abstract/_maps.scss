@@ -3,12 +3,16 @@
    direccion: column,
    justificado: center,
    alineado: center,
-  )
-;
+  );
+
   $di-flexx:(
     direccion:row,
     justificado:center,
     alineado:center,
-  )
+  );
 
+  $breakpoints:(
+    sm:576px,
+    md:768px,
+  );
 

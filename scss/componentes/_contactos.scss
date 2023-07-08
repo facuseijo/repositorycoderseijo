@@ -1,26 +1,26 @@
 /*nosotros pagina*/
 .prcontacto {
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     padding: 0 0 0 15px;
     background-color: rgba(4, 144, 213, 0.88);
     color:white;
     padding: 15px;
 }
 .mapacontacto{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-}
-@media (max-width: 576px){
-    .mapacontacto div iframe {
-        display: inline;
-        margin:10px;
-        padding:25px;
-        width:100%;
-   }
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+      }
+       @include media-mob(sm){
+         div iframe {
+             display: inline;
+             margin: 10px;
+             padding: 25px;
+             width: 100%;
+   } 
 }
 .contactoh1{
    display: flex;

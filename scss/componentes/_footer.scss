@@ -1,7 +1,7 @@
 /*footer gral*/
 .footgral{
     background: linear-gradient(90deg, rgb(108, 100, 75) 0%, rgba(247, 145, 80, 0.66) 50%, rgb(4, 184, 213) 100%);
-    box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
+    box-shadow: $box-shadow-navfooter;
     ul{
         list-style-type: none;
         display:flex;
@@ -17,12 +17,12 @@
                  height: 20px;
                  margin: -5px 5px;
                  }
-            
-    @media (max-width: 576px){
      ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+         @include media-mob(sm){
+             display: flex;
+             flex-direction: column;
+             justify-content: flex-end;
+             height:140px;
                 } 
         
             }
@@ -31,3 +31,4 @@
 }
 
 
+ 

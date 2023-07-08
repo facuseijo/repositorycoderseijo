@@ -9,6 +9,28 @@
     padding-top:5px;
     margin-right: 5px;
 }
+
+@media (max-width: 576px){
+ .nosotrosmain div{
+  flex-direction: column;
+ align-items: center;
+ }
+}
+/*ver responsive mediaq nosotros que falla*/
+@media (max-width: 576px){
+     .nosotrosmain div{
+      display: block;
+      align-items: center;
+     }
+}
+ 
+@media (max-width: 576px){
+     .nosotrosmain section{
+      display: block;
+      align-items: center;
+     }
+}
+        
 .nosotrosmain p{
       margin:10px;
       color: white; 
@@ -75,3 +97,9 @@
      grid-area: vision;
      text-align: right;
 } 
+@media (max-width: 576px){
+     .row1mio, .row2mio, .row3mio{
+       flex-direction: column;
+      align-items: center;
+     }
+ }

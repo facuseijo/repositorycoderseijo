@@ -42,8 +42,11 @@
     align-items: center;
     width:700px;
 }
-@media (max-width: 576px){
+
    .rowconcar{
+    @include media-mob(sm){
       width:100%; 
   }
 }
+
+        

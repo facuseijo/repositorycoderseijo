@@ -58,12 +58,11 @@
   height: 20px;
   margin: -5px 5px;
 }
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .footgral ul a ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 140px;
   }
 }
 
@@ -167,7 +166,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .letraenblock {
     display: flex;
     flex-direction: column;
@@ -223,8 +222,8 @@
   align-items: center;
 }
 
-@media screen and (max-width: 576px) {
-  div iframe {
+@media (max-width: 576px) {
+  .mapacontacto div iframe {
     display: inline;
     margin: 10px;
     padding: 25px;
@@ -291,12 +290,11 @@
   width: 700px;
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .rowconcar {
     width: 100%;
   }
 }
-
 /*nosotros pagina*/
 .nosotrosmain {
   display: grid;
@@ -308,25 +306,6 @@
   margin-right: 5px;
 }
 
-@media (max-width: 576px) {
-  .nosotrosmain div {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-/*ver responsive mediaq nosotros que falla*/
-@media (max-width: 576px) {
-  .nosotrosmain div {
-    display: block;
-    align-items: center;
-  }
-}
-@media (max-width: 576px) {
-  .nosotrosmain section {
-    display: block;
-    align-items: center;
-  }
-}
 .nosotrosmain p {
   margin: 10px;
   color: white;
@@ -407,12 +386,6 @@
   text-align: right;
 }
 
-@media (max-width: 576px) {
-  .row1mio, .row2mio, .row3mio {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 /*productos pagina*/
 .prodh1 {
   display: flex;
@@ -442,7 +415,7 @@
   padding-left: 30px;
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .row1mio, .row2mio, .row3mio {
     flex-direction: column;
     align-items: center;
@@ -503,4 +476,4 @@ p {
   font-size: 22px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css~.map */

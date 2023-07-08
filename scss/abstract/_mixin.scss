@@ -1,0 +1,12 @@
+
+@mixin media-mob($breakpoint){
+     @media screen and (max-width:map-get($breakpoints, $breakpoint)) {      
+         @content;    
+    }
+};
+
+@mixin bordeRedondo($tipo, $redondeo){
+    border: $tipo;
+    border-radius: $redondeo;
+};
+
