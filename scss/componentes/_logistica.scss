@@ -1,14 +1,14 @@
 
 /*nosotros pagina*/
 .logisticarticle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin:45px;
+     display: map-get($di-flex,display);
+     flex-direction:map-get($di-flex,direccion);
+     align-items:map-get($di-flex,alineado);
+     margin:45px;
 }
 .container-fluidlogistic{
-   background-color: rgba(4, 144, 213, 0.88);
-    padding: 15px;
+     background-color:$color-bc;
+     padding: 15px;
 }
 
 .rowlogistic{
@@ -22,27 +22,27 @@
      }
 
      h4 {
-    color:#1f3f6d;
+    color:$color-titulo;
      }
 }
 
 
 .card1log, .card2log, .card3log, .card4log{
-    border-radius: none;
-    overflow:hidden;
+     border-radius: none;
+     overflow:hidden;
 }
 .contcarousellog{
-    opacity: .9;
-    width:100%;
-    padding:20px;
-    background-color: rgba(4, 144, 213, 0.88);
-    overflow: hidden; 
+     opacity: .9;
+     width:100%;
+     padding:20px;
+     background-color:$color-bc;
+     overflow: hidden; 
 }
 .rowconcar{
-     display:flex;
-     flex-direction: column;
-     align-content: center;
-     align-items: center;
+     display:map-get($di-flex,display);
+     flex-direction: map-get($di-flex,direccion);
+     align-content: map-get($di-flex,justificado);
+     align-items: map-get($di-flex,alineado);
      width:700px;
 
      @include media-mob(sm){

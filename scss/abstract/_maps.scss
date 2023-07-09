@@ -1,14 +1,16 @@
 
   $di-flex:(
+   display:flex,
    direccion: column,
-   justificado: center,
-   alineado: center,
+   justificado:center,
+   alineado:center,
   );
 
   $di-flexx:(
+    display:flex,
     direccion:row,
-    justificado:center,
-    alineado:center,
+    justificado:flex-start,
+    alineado:flex-start,
   );
 
   $breakpoints:(

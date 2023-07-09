@@ -18,7 +18,7 @@
   color: white;
 }
 .barrabristol ul li:visited a:hover {
-  background-color: rgba(29, 109, 220, 0.8078431373);
+  background-color: rgba(4, 144, 213, 0.88);
 }
 
 .logo img {
@@ -32,7 +32,7 @@
 }
 
 .btnnav {
-  background-color: #3a85bc;
+  background-color: rgba(4, 144, 213, 0.88);
   color: white;
   border-radius: 200px;
   border-radius: 15%;
@@ -268,7 +268,7 @@
   background-color: rgba(206, 198, 198, 0.967);
 }
 .rowlogistic h4 {
-  color: #1f3f6d;
+  color: #123565;
 }
 
 .card1log, .card2log, .card3log, .card4log {
@@ -308,45 +308,22 @@
   margin-right: 5px;
 }
 .nosotrosmain p {
-  margin: 10px;
+  margin: 5px;
   color: white;
 }
 .nosotrosmain h5 {
-  margin: 20px;
+  margin: 5px;
   color: white;
 }
 @media screen and (max-width: 576px) {
   .nosotrosmain div {
-    flex-direction: column;
+    display: flex;
+    flex-direction: wrap;
     align-items: center;
   }
 }
 
-/*ver responsive mediaq nosotros que falla*/
-@media screen and (max-width: 576px) {
-  .nosotrosmain div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-@media screen and (max-width: 576px) {
-  .nosotrosmain section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-.valores, .mision, .vision, .nosotros, .historia {
-  background-color: rgba(4, 144, 213, 0.88);
-  color: white;
-}
-
-.imagenhistoria, .imagennosotros, .imagenvalores, .imagenvision, .imagenmision {
-  background-color: rgba(4, 144, 213, 0.88);
-  color: white;
-}
-
+/*ver responsive mediaq nosotros por que falla*/
 .imagennosotros img {
   grid-area: inosotros;
   width: 100%;
@@ -382,29 +359,44 @@
   border-radius: 200px;
 }
 
+.imagenhistoria, .imagennosotros, .imagenvalores, .imagenvision, .imagenmision {
+  background-color: rgba(4, 144, 213, 0.88);
+  color: white;
+}
+
 .nosotros {
   grid-area: nosotros;
   text-align: left;
+  background-color: rgba(4, 144, 213, 0.88);
+  color: white;
 }
 
 .historia {
   grid-area: historia;
   text-align: right;
+  background-color: rgba(4, 144, 213, 0.88);
+  color: white;
 }
 
 .valores {
   grid-area: valores;
   text-align: center;
+  background-color: rgba(4, 144, 213, 0.88);
+  color: white;
 }
 
 .mision {
   grid-area: mision;
   text-align: left;
+  background-color: rgba(4, 144, 213, 0.88);
+  color: white;
 }
 
 .vision {
   grid-area: vision;
   text-align: right;
+  background-color: rgba(4, 144, 213, 0.88);
+  color: white;
 }
 
 /*productos pagina*/
@@ -422,7 +414,7 @@
 
 .card1mia a, .card2mia a, .card3mia a, .card4mia a, .card5mia a, .card6mia a, .card7mia a, .card8mia a, .card9mia a, .card10mia a, .card11mia a, .card12mia a {
   background-color: #5199af;
-  border-color: #1f3f6d;
+  border-color: #123565;
 }
 
 .row1mio, .row2mio, .row3mio {
@@ -455,40 +447,40 @@ body {
 }
 
 h1 {
-  font: normal 31px "Alfa Slab One" !important;
+  font-family: normal 31px "Alfa Slab One" !important;
   color: #123565;
 }
 
 h2 {
-  font: "Dancing Script", cursive;
+  font-family: normal "Dancing Script";
   margin: 10px 0;
   color: #123565;
-  font: 500;
+  font-weight: 500;
   font-size: 28px;
 }
 
 h3 {
-  font: "Dancing Script", cursive;
+  font-family: normal "Dancing Script";
   margin: 10px 0;
   color: #123565;
-  font: 500;
+  font-weight: 500;
   font-size: 23px;
 }
 
 h4 {
-  font: normal 31px "Alfa Slab One";
+  font-family: normal 31px "Alfa Slab One";
   color: white;
   font-size: 21px;
 }
 
 h5 {
-  font: normal 31px "Alfa Slab One";
+  font-family: normal "Dancing Script";
   color: #123565;
-  font: 19px;
+  font-size: 19px;
 }
 
 p {
-  font: "Dancing Script", cursive;
+  font-family: normal "Dancing Script";
   color: #73848e;
   font-weight: 400;
   font-size: 22px;

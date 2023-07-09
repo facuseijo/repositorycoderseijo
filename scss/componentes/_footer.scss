@@ -1,14 +1,14 @@
 /*footer gral*/
 .footgral{
-    background: linear-gradient(90deg, rgb(108, 100, 75) 0%, rgba(247, 145, 80, 0.66) 50%, rgb(4, 184, 213) 100%);
-    box-shadow: $box-shadow-navfooter;
-    ul{
-        list-style-type: none;
-        display:flex;
-        flex-direction:row;
-        justify-content:flex-end;
-        color:white;
-         a{
+     background: linear-gradient(90deg, rgb(108, 100, 75) 0%, rgba(247, 145, 80, 0.66) 50%, rgb(4, 184, 213) 100%);
+     box-shadow: $box-shadow-navfooter;
+      ul{
+         list-style-type: none;
+         display:map-get($di-flex,display);
+         flex-direction:map-get($di-flexx,direccion);
+         justify-content:flex-end;
+         color:$color-ter;
+          a{
             display: block;
             text-align: right;
             padding: 14px 16px;
@@ -19,8 +19,8 @@
                  }
      ul{
          @include media-mob(sm){
-             display: flex;
-             flex-direction: column;
+             display:map-get($di-flex,display);
+             flex-direction: columnmap-get($di-flex,direccion);
              justify-content: flex-end;
              height:140px;
                 } 

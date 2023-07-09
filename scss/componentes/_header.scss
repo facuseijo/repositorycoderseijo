@@ -10,14 +10,14 @@
          margin-left: 30px;
  
          li {
-             color: white;
+             color:$color-ter;
              &:visited {
                  color: #43c4f3ce;
 
                  a {
-                     color: white;
+                     color: $color-ter;
                      &:hover {
-                         background-color: #1d6ddcce;
+                         background-color:$color-bc;
  
                      }
                  }
@@ -31,11 +31,11 @@
 }
 .barratitulo{
      margin-top:8px;
-     color:  white;
+     color:$color-ter;
 }
 .btnnav{
-     background-color: #3a85bc;
-     color: white;
+     background-color: $color-bc;
+     color:$color-ter;
      border-radius:200px;
      border-radius: 15%;
      border-color: #91abd0;

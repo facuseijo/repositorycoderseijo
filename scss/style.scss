@@ -21,38 +21,38 @@ body {
      margin: 5px;
      padding: 5px 5px;
      margin:6px;
-     background-color: rgba(0,0,0,0.10)!important; 
+     background-color:$color-sec!important; 
      }
       h1{
-         font:$font-title!important;
+         font-family:$font-title!important;
          color:$color-titulo;
         }
       h2 {
-         font:$font-texto;
+         font-family:$font-texto2;
          margin: 10px 0;
          color:$color-titulo;
-         font:$font-weighth;  
+         font-weight:$font-weighth;  
          font-size: 28px;
         }
       h3 {
-         font:$font-texto;
+         font-family:$font-texto2;
          margin: 10px 0;
          color:$color-titulo;
-         font:$font-weighth;  
+         font-weight:$font-weighth;  
          font-size: 23px;
         }
       h4{
-         font:$font-title;
+         font-family:$font-title;
          color:$color-textop2;
          font-size: 21px;
         }
       h5{
-         font:$font-title;
+         font-family:$font-texto2;
          color:$color-titulo;
-         font:$font-size5;
-         }
+         font-size:$font-size5;
+        }
        p{
-         font:$font-texto;
+         font-family:$font-texto2;
          color:$color-textop;
          font-weight: 400;
          font-size: 22px;
