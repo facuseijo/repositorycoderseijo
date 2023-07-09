@@ -1,18 +1,18 @@
 /*nosotros pagina*/
 .prcontacto {
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     padding: 0 0 0 15px;
-     background-color:$color-bc;
-     color:white;
-     padding: 15px;
+      display:map-get($di-flex,display);
+      flex-direction:map-get($di-flex,direccion);
+      justify-content: flex-start;
+      padding: 0 0 0 15px;
+      background-color:$color-bc;
+      color:$color-ter;
+      padding: 15px;
 }
 .mapacontacto{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
+     display: map-get($di-flex,display);
+     flex-direction:map-get($di-flex,direccion);;
+     justify-content: map-get($di-flex,justificado);
+     align-items: map-get($di-flex,alineado);
       
        @include media-mob(sm){
          div iframe {
@@ -24,11 +24,11 @@
         }
 }
 .contactoh1{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     margin: 22px;
+      display:map-get($di-flex,display);
+      flex-direction: map-get($di-flex,direccion);
+      align-items: map-get($di-flex,alineado);
+      margin: 22px;
 }
 .formu{
-     margin: 25px;
+      margin: 25px;
 }

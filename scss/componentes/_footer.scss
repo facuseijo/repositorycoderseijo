@@ -20,7 +20,7 @@
      ul{
          @include media-mob(sm){
              display:map-get($di-flex,display);
-             flex-direction: columnmap-get($di-flex,direccion);
+             flex-direction: map-get($di-flex,direccion);
              justify-content: flex-end;
              height:140px;
                 } 

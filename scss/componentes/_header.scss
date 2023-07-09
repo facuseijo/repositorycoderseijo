@@ -34,9 +34,7 @@
      color:$color-ter;
 }
 .btnnav{
-     background-color: $color-bc;
-     color:$color-ter;
-     border-radius:200px;
-     border-radius: 15%;
-     border-color: #91abd0;
+    @include botonbor(solid ,15% ,#4a8eed ,$color-bc, $color-ter)
+   
 }
+

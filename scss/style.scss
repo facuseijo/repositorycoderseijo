@@ -35,7 +35,7 @@ body {
          font-size: 28px;
         }
       h3 {
-         font-family:$font-texto2;
+         font-family:$font-texto1;
          margin: 10px 0;
          color:$color-titulo;
          font-weight:$font-weighth;  
@@ -45,11 +45,13 @@ body {
          font-family:$font-title;
          color:$color-textop2;
          font-size: 21px;
+         font-weight:$font-weighth;  
         }
       h5{
          font-family:$font-texto2;
          color:$color-titulo;
          font-size:$font-size5;
+         font-weight:$font-weighth;  
         }
        p{
          font-family:$font-texto2;

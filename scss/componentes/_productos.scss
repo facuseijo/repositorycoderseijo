@@ -1,8 +1,8 @@
 /*productos pagina*/
 .prodh1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: map-get($di-flex,display);
+    flex-direction: map-get($di-flex,direccion);
+    align-items: map-get($di-flex,alineado);
     margin:45px;
 }
 .container-fluidprod{
@@ -21,8 +21,8 @@
  
      @include media-mob(sm){
          .row1mio, .row2mio, .row3mio{
-         flex-direction: column;
-         align-items: center;
+         flex-direction: map-get($di-flex,direccion);
+         align-items: map-get($di-flex,alineado);
 
              div {
                  background-color:rgba(206, 198, 198, 0.967);

@@ -3,6 +3,13 @@
      @media screen and (max-width:map-get($breakpoints, $breakpoint)) {      
          @content;    
     }
-};
+}
 
+@mixin botonbor($tipo, $redondo, $bgc, $bcr, $color){
+      border: $tipo;
+      border-radius: $redondo;
+      border-color:$bcr;
+      background-color: $bgc;
+      color:$color;
+}
 

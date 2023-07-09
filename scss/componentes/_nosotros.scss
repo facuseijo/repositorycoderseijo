@@ -27,66 +27,61 @@
 /*ver responsive mediaq nosotros por que falla*/
 
 .imagennosotros img {
-      grid-area: inosotros;
-      width:100%;
-      height:100%;
-      border-radius: 200px;
+       grid-area: inosotros;
+       border-radius: 200px;
+       @extend %imgtamaño;
 }
 .imagenhistoria img {
-      grid-area: ihistoria;
-      width:100%;
-      height:100%;
-      border-radius: 100%;
+       grid-area: ihistoria;
+       border-radius: 100%;
+       @extend %imgtamaño;
 }
 .imagenvalores img {
-      grid-area: ivalores; 
-      width:100%;
-      height:100%;
-      border-radius: 200px;
+       grid-area: ivalores; 
+       border-radius: 200px;
+       @extend %imgtamaño;
 }
 .imagenmision img {
-      grid-area: imision;
-      width:100%;
-      height:100%;
-      border-radius: 100%;
+       grid-area: imision;
+       border-radius: 100%;
+       @extend %imgtamaño;
 }
 .imagenvision img{
-      grid-area: ivision;
-      width:100%;
-      height:100%;
-      border-radius: 200px;
+       grid-area: ivision;
+       border-radius: 200px;
+       @extend %imgtamaño;
 }
 .imagenhistoria, .imagennosotros, .imagenvalores, .imagenvision, .imagenmision{
-      background-color:$color-bc;
-      color: $color-ter; 
+       background-color:$color-bc;
+       color: $color-ter; 
 }
 .nosotros {
-      grid-area: nosotros;
-      text-align: left;
-      background-color:$color-bc;
-      color: $color-ter; 
+       grid-area: nosotros;
+       text-align: left;
+       background-color:$color-bc;
+       color: $color-ter; 
 }
 .historia {
-      grid-area: historia;
-      text-align:right;
-      background-color: $color-bc;
-      color: $color-ter; 
+       grid-area: historia;
+       text-align:right;
+       background-color: $color-bc;
+       color: $color-ter; 
 }
 .valores {
-      grid-area: valores;
-      text-align: center;
-      background-color: $color-bc;
-      color: $color-ter; 
+       grid-area: valores;
+        text-align: center;
+       background-color: $color-bc;
+       color: $color-ter; 
 }   
 .mision {
-      grid-area: mision;
-      text-align: left;
-      background-color: $color-bc;
-      color: $color-ter;  
+       grid-area: mision;
+       text-align: left;
+       background-color: $color-bc;
+       color: $color-ter;  
 }    
 .vision {
-      grid-area: vision;
-      text-align: right;
-      background-color:$color-bc;
-      color: $color-ter; 
+       grid-area: vision;
+       text-align: right;
+       background-color:$color-bc;
+       color: $color-ter; 
 } 
