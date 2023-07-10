@@ -93,8 +93,9 @@
   flex-direction: column;
   align-items: center;
   color: white;
+  font-size: 30px;
 }
-.salaminportad H4 {
+.salaminportad H3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -217,7 +218,7 @@
 .prcontacto {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: flex-start;
   padding: 0 0 0 15px;
   background-color: rgba(4, 144, 213, 0.88);
   color: white;
@@ -227,8 +228,8 @@
 .mapacontacto {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  margin-left: 140px;
 }
 @media screen and (max-width: 576px) {
   .mapacontacto div iframe {
@@ -281,6 +282,13 @@
   overflow: hidden;
 }
 
+.logistipresentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
 .contcarousellog {
   opacity: 0.9;
   width: 100%;
@@ -316,9 +324,11 @@
   margin: 5px;
   color: white;
 }
-.nosotrosmain h5 {
+.nosotrosmain h3 {
   margin: 5px;
   color: white;
+  font-weight: 300;
+  font-size: 22px;
 }
 @media screen and (max-width: 576px) {
   .nosotrosmain div {
@@ -447,7 +457,7 @@ h1 {
 }
 
 h2 {
-  font-family: normal "Dancing Script";
+  font-family: "Dancing Script", cursive;
   margin: 10px 0;
   color: #123565;
   font-weight: 500;
@@ -455,7 +465,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Dancing Script", cursive;
+  font-family: normal 31px "Alfa Slab One";
   margin: 10px 0;
   color: #123565;
   font-weight: 500;

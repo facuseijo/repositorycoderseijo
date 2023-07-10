@@ -16,8 +16,9 @@
          flex-direction: map-get($di-flex,direccion);
          align-items: map-get($di-flex,alineado);
          color:$color-ter;
+         font-size: 30px;
     }
-     H4{
+     H3{
          display:map-get($di-flex,display);
          flex-direction: map-get($di-flex,direccion);
          align-items: map-get($di-flex,alineado);
