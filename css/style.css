@@ -87,6 +87,7 @@
   object-fit: cover;
   overflow: hidden;
   height: 650px;
+  box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
 }
 .salaminportad H1 {
   display: flex;
@@ -199,6 +200,10 @@
   object-fit: cover;
 }
 
+.carsom {
+  box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
+}
+
 /*videoabajoindex*/
 .iframelario {
   display: flex;
@@ -308,6 +313,10 @@
   .rowconcar {
     width: 100%;
   }
+}
+
+.carancho {
+  box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
 }
 
 /*nosotros pagina*/

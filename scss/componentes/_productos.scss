@@ -12,13 +12,14 @@
 .card1mia a, .card2mia a, .card3mia a, .card4mia a, .card5mia a, .card6mia a, .card7mia a, .card8mia a, .card9mia a, .card10mia a, .card11mia a, .card12mia a{
     background-color:$color-bcard;
    border-color:$color-pri;
+  
 }
 .row1mio, .row2mio, .row3mio{
      column-gap: 40px;
      row-gap: 20px;
      margin: 10px;
      padding-left: 30px;
- 
+     
      @include media-mob(sm){
          .row1mio, .row2mio, .row3mio{
          flex-direction: map-get($di-flex,direccion);
