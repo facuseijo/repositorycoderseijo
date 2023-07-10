@@ -1,17 +1,17 @@
 /*productos pagina*/
 .prodh1{
-    display: map-get($di-flex,display);
-    flex-direction: map-get($di-flex,direccion);
-    align-items: map-get($di-flex,alineado);
-    margin:45px;
+     display: map-get($di-flex,display);
+     flex-direction: map-get($di-flex,direccion);
+     align-items: map-get($di-flex,alineado);
+     margin:45px;
 }
 .container-fluidprod{
-    background-color: $color-bc;
-    padding: 15px;
+     background-color: $color-bc;
+     padding: 15px;
 }
 .card1mia a, .card2mia a, .card3mia a, .card4mia a, .card5mia a, .card6mia a, .card7mia a, .card8mia a, .card9mia a, .card10mia a, .card11mia a, .card12mia a{
-    background-color:$color-bcard;
-   border-color:$color-pri;
+     background-color:$color-bcard;
+     border-color:$color-pri;
   
 }
 .row1mio, .row2mio, .row3mio{
@@ -30,4 +30,8 @@
             } 
         }
     }
+}
+.card1mia img, .card2mia img, .card3mia img, .card4mia img, .card5mia img, .card6mia img, .card7mia img, .card8mia img, .card9mia img, .card10mia img, .card11mia img, .card12mia img{
+ width:260px;
+ height:140px;
 }

@@ -1,23 +1,19 @@
 /*header barra nav*/
 
 .barrabristol {
-     position: fixed;
-     z-index: 80;
      background: linear-gradient(90deg, rgb(108, 100, 75) 0%, rgba(247, 145, 80, 0.66) 50%, rgb(4, 184, 213) 100%);
      box-shadow: $box-shadow-navfooter;
  
-     ul {
+        ul {
          margin-left: 30px;
- 
-         li {
+        li {
              color:$color-ter;
-             &:visited {
+         &:visited {
                  color: #43c4f3ce;
-
-                 a {
-                     color: $color-ter;
-                     &:hover {
-                         background-color:$color-bc;
+         a {
+            color: $color-ter;
+         &:hover {
+         background-color:$color-bc;
  
                      }
                  }
