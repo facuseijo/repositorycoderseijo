@@ -1,9 +1,8 @@
-.imagenvision img, .imagenmision img, .imagenvalores img, .imagenhistoria img, .imagennosotros img {
+.contcarousellog, .rowcarousel div img, .chacinados img, .jamones img {
   width: 100%;
-  height: 100%;
 }
 
-.contactoh1 {
+.contactoh1, .prcontacto {
   text-align: center;
   padding: 5px;
   margin: 5px;
@@ -135,7 +134,6 @@
 }
 .jamones img {
   opacity: 9;
-  width: 100%;
   height: 190px;
   border-radius: 20px;
   transition: all 0.6s;
@@ -171,7 +169,6 @@
 }
 .chacinados img {
   opacity: 0.9;
-  width: 100%;
   height: 530px;
   border-radius: 20px;
   transition: all 0.6s;
@@ -200,7 +197,6 @@
 }
 .rowcarousel div img {
   height: 370px;
-  width: 100%;
   object-fit: cover;
 }
 
@@ -300,7 +296,6 @@
 
 .contcarousellog {
   opacity: 0.9;
-  width: 100%;
   padding: 20px;
   background-color: rgba(4, 144, 213, 0.88);
   overflow: hidden;
@@ -324,123 +319,91 @@
 }
 
 /*nosotros pagina*/
-.nosotrosmain {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "nosotros inostros" "ihistoria historia" "valores ivalores" "imision mision" "vision ivision";
-  row-gap: 5px;
-  padding-top: 5px;
-  margin-right: 5px;
-}
-.nosotrosmain p {
-  margin: 5px;
-  color: white;
-}
-.nosotrosmain h3 {
-  margin: 5px;
-  color: white;
-  font-weight: 300;
-  font-size: 22px;
-}
-@media screen and (max-width: 576px) {
-  .nosotrosmain article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-/*ver responsive mediaq nosotros por que falla*/
-.imagennosotros img {
-  grid-area: inosotros;
-  border-radius: 200px;
+.imagennosotros {
+  width: 500px;
+  margin-right: 200px;
+  margin: 10px;
   box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
-}
-
-.imagenhistoria img {
-  grid-area: ihistoria;
-  border-radius: 100%;
-  box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
-}
-
-.imagenvalores img {
-  grid-area: ivalores;
-  border-radius: 200px;
-  box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
-}
-
-.imagenmision img {
-  grid-area: imision;
-  border-radius: 100%;
-  box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
-}
-
-.imagenvision img {
-  grid-area: ivision;
-  border-radius: 200px;
-  box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
-}
-
-.imagenhistoria,
-.imagennosotros,
-.imagenvalores,
-.imagenvision,
-.imagenmision {
-  background-color: rgba(4, 144, 213, 0.88);
-  color: white;
 }
 
 .nosotros {
-  grid-area: nosotros;
-  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+  padding-right: 20px;
   background-color: rgba(4, 144, 213, 0.88);
   color: white;
 }
 
 .historia {
-  grid-area: historia;
-  text-align: right;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
   background-color: rgba(4, 144, 213, 0.88);
   color: white;
 }
 
+.imagenhistoria {
+  width: 580px;
+  margin-right: 50px;
+  margin-left: 22px;
+  height: 390px;
+  box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
+}
+
 .valores {
-  grid-area: valores;
-  text-align: center;
-  background-color: rgba(4, 144, 213, 0.88);
+  padding-right: 220px;
   color: white;
 }
 
 .mision {
-  grid-area: mision;
-  text-align: left;
+  display: flex;
+  justify-content: flex-start;
   background-color: rgba(4, 144, 213, 0.88);
   color: white;
+  padding-right: 150px;
+}
+
+.imagenmision {
+  width: 500px;
+  margin-right: 50px;
+  margin-left: 22px;
+  box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
 }
 
 .vision {
-  grid-area: vision;
-  text-align: right;
   background-color: rgba(4, 144, 213, 0.88);
-  color: white;
+  padding: 5px;
 }
 
-@media screen and (max-width: 576px) {
-  .imagenhistoria,
-  .imagennosotros,
-  .imagenvalores,
-  .imagenvision,
-  .imagenmision,
-  .vision,
-  .mision,
-  .valores,
+@media (max-width: 576px), (max-width: 850px) {
+  .nosotros,
   .historia,
-  .nosotros {
-    display: block;
+  .valores,
+  .vision,
+  .mision {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotrosmain img {
+    width: 80%;
+    height: 80%;
   }
 }
+.nosotrosmain h1 {
+  font-family: "Dancing Script", cursive;
+  color: white;
+}
+.nosotrosmain h3 {
+  font-weight: 300;
+  font-size: 21px;
+}
+.nosotrosmain p {
+  color: white;
+  font-weight: 300;
+  font-size: 19px;
+}
+
 /*productos pagina*/
 .prodh1 {
   display: flex;

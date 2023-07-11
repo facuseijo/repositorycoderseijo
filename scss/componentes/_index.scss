@@ -57,7 +57,7 @@
 
      img{
          opacity:9;
-         width:100%;
+         @extend %imgtamaño;
          height:190px;
          border-radius:20px;
          transition:all 0.6s;
@@ -93,7 +93,7 @@
 
      img{
          opacity: .9;
-         width:100%;
+         @extend %imgtamaño;
          height:530px;
          border-radius:20px;
          transition:all 0.6s;
@@ -122,7 +122,7 @@
 
      div img{
          height:370px;
-         width:100%;
+         @extend %imgtamaño;
          object-fit: cover;
 
         }

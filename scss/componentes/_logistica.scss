@@ -1,14 +1,14 @@
 
 /*nosotros pagina*/
 .logisticarticle{
-      display: map-get($di-flex,display);
-      flex-direction:map-get($di-flex,direccion);
-      align-items:map-get($di-flex,alineado);
-      margin:45px;
+       display: map-get($di-flex,display);
+       flex-direction:map-get($di-flex,direccion);
+       align-items:map-get($di-flex,alineado);
+       margin:45px;
 }
 .container-fluidlogistic{
-      background-color:$color-bc;
-      padding: 15px;
+       background-color:$color-bc;
+       padding: 15px;
 }
 .rowlogistic{
       column-gap: 30px;
@@ -23,34 +23,34 @@
      }
 }
 .card1log, .card2log, .card3log, .card4log{
-      border-radius: none;
-      overflow:hidden;
+       border-radius: none;
+       overflow:hidden;
 }
 .logistipresentacion{
-      display:map-get($di-flex,display);
-      flex-direction: map-get($di-flex,direccion);
-      align-items: map-get($di-flex,alineado);
-      margin: 5px;
+       display:map-get($di-flex,display);
+       flex-direction: map-get($di-flex,direccion);
+       align-items: map-get($di-flex,alineado);
+       margin: 5px;
 }
 .contcarousellog{
-      opacity: .9;
-      width:100%;
-      padding:20px;
-      background-color:$color-bc;
-      overflow: hidden; 
+       opacity: .9;
+       @extend %imgtamaño;
+       padding:20px;
+       background-color:$color-bc;
+       overflow: hidden; 
 }
 .rowconcar{
-      display:map-get($di-flex,display);
-      flex-direction: map-get($di-flex,direccion);
-      align-content: map-get($di-flex,justificado);
-      align-items: map-get($di-flex,alineado);
-      width:700px;
+       display:map-get($di-flex,display);
+       flex-direction: map-get($di-flex,direccion);
+        align-content: map-get($di-flex,justificado);
+       align-items: map-get($di-flex,alineado);
+       width:700px;
 
      @include media-mob(sm){
-      width:100%; 
+        width:100%; 
     }   
 }
 .carancho{
-      box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
+       box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
 }
         

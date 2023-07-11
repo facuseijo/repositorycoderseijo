@@ -1,129 +1,81 @@
 /*nosotros pagina*/
-.nosotrosmain {
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-       grid-template-areas: "nosotros inostros" "ihistoria historia"
-              "valores ivalores" "imision mision" "vision ivision";
-       row-gap: 5px;
-       padding-top: 5px;
-       margin-right: 5px;
-       p {
-              margin: 5px;
-              color: $color-ter;
+              
+.imagennosotros {
+        width:500px;
+        margin-right: 200px;
+        margin:10px;    
+        box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
+} 
+.nosotros{
+        display:map-get($di-flex,display);
+        justify-content:flex-start;
+        padding: 5px;
+        padding-right: 20px;
+        background-color:$color-bc;
+        color: $color-ter; 
+}
+.historia{
+        display:map-get($di-flex,display);
+        justify-content:flex-start;
+        padding: 5px;
+        background-color:$color-bc;
+        color: $color-ter; 
+}
+.imagenhistoria {
+        width:580px;
+        margin-right: 50px;
+        margin-left: 22px;  
+        height:390px;
+        box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
+}
+.valores{
+        padding-right: 220px;
+        color: $color-ter;
+}
+.mision{
+        display:map-get($di-flex,display);
+        justify-content:flex-start;
+        background-color:$color-bc;
+        color: $color-ter; 
+        padding-right: 150px;
+}
+.imagenmision{
+        width:500px;
+        margin-right: 50px;
+        margin-left: 22px; 
+        box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);     
+}   
+.vision{
+        background-color:$color-bc;
+        padding:5px;
+}
+@media (max-width: 576px),(max-width:850px){
+        .nosotros,
+        .historia,
+        .valores,
+        .vision,
+        .mision{       
+             flex-direction: map-get($di-flex,direccion);
+             align-items: center;
+       
        }
-       h3 {
-              margin: 5px;
-              color: $color-ter;
-              font-weight: 300;
-              font-size: 22px;
+       .nosotrosmain img{
+              width:80%;
+              height:80%;       
        }
-   @include media-mob(sm) {
-              article {
-                     display: map-get($di-flex, display);
-                     flex-direction: column;
-                     justify-content: center;
-                     align-items: map-get($di-flex, alineado);
-              }
+} 
+.nosotrosmain{
+       h1{
+          font-family:$font-texto1;
+          color:$color-ter;          
+       }
+       h3{
+         font-weight: 300;
+         font-size: 21px;
+       }
+       p{ 
+         color:$color-ter;
+         font-weight: 300;
+         font-size: 19px;
        }
 }
-
-/*ver responsive mediaq nosotros por que falla*/
-
-.imagennosotros img {
-       grid-area: inosotros;
-       border-radius: 200px;
-       @extend %imgtamaño;
-       box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
-}
-
-.imagenhistoria img {
-       grid-area: ihistoria;
-       border-radius: 100%;
-       @extend %imgtamaño;
-       box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
-}
-
-.imagenvalores img {
-       grid-area: ivalores;
-       border-radius: 200px;
-       @extend %imgtamaño;
-       box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
-}
-
-.imagenmision img {
-       grid-area: imision;
-       border-radius: 100%;
-       @extend %imgtamaño;
-       box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
-}
-
-.imagenvision img {
-       grid-area: ivision;
-       border-radius: 200px;
-       @extend %imgtamaño;
-       box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
-}
-
-.imagenhistoria,
-.imagennosotros,
-.imagenvalores,
-.imagenvision,
-.imagenmision {
-       background-color: $color-bc;
-       color: $color-ter;
-}
-
-.nosotros {
-       grid-area: nosotros;
-       text-align: left;
-       background-color: $color-bc;
-       color: $color-ter;
-}
-
-.historia {
-       grid-area: historia;
-       text-align: right;
-       background-color: $color-bc;
-       color: $color-ter;
-}
-
-.valores {
-       grid-area: valores;
-       text-align: center;
-       background-color: $color-bc;
-       color: $color-ter;
-}
-
-.mision {
-       grid-area: mision;
-       text-align: left;
-       background-color: $color-bc;
-       color: $color-ter;
-}
-
-.vision {
-       grid-area: vision;
-       text-align: right;
-       background-color: $color-bc;
-       color: $color-ter;
-}
-
-
-
- @include media-mob(sm) {
-              .imagenhistoria,
-              .imagennosotros,
-              .imagenvalores,
-              .imagenvision,
-              .imagenmision,
-              .vision,
-              .mision,
-              .valores,
-              .historia,
-              .nosotros{
-                     display:block;
-                    
-                    
-              }
-       }

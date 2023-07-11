@@ -1,5 +1,6 @@
 /*nosotros pagina*/
 .prcontacto {
+       @extend %tituloPpal;
        display:map-get($di-flex,display);
        flex-direction:map-get($di-flex,direccion);
        align-items: flex-start;
