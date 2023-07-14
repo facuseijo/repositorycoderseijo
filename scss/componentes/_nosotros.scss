@@ -1,81 +1,94 @@
 /*nosotros pagina*/
-              
+
 .imagennosotros {
-        width:500px;
+        width: 500px;
         margin-right: 200px;
-        margin:10px;    
+        margin: 10px;
         box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
-} 
-.nosotros{
-        display:map-get($di-flex,display);
-        justify-content:flex-start;
+}
+
+.nosotros {
+        display: map-get($di-flex, display);
+        justify-content: flex-start;
         padding: 5px;
         padding-right: 20px;
-        background-color:$color-bc;
-        color: $color-ter; 
+        background-color: $color-bc;
+        color: $color-ter;
 }
-.historia{
-        display:map-get($di-flex,display);
-        justify-content:flex-start;
+
+.historia {
+        display: map-get($di-flex, display);
+        justify-content: flex-start;
         padding: 5px;
-        background-color:$color-bc;
-        color: $color-ter; 
+        background-color: $color-bc;
+        color: $color-ter;
 }
+
 .imagenhistoria {
-        width:580px;
+        width: 580px;
         margin-right: 50px;
-        margin-left: 22px;  
-        height:390px;
+        margin-left: 22px;
+        height: 390px;
         box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
 }
-.valores{
+
+.valores {
         padding-right: 220px;
         color: $color-ter;
 }
-.mision{
-        display:map-get($di-flex,display);
-        justify-content:flex-start;
-        background-color:$color-bc;
-        color: $color-ter; 
+
+.mision {
+        display: map-get($di-flex, display);
+        justify-content: flex-start;
+        background-color: $color-bc;
+        color: $color-ter;
         padding-right: 150px;
 }
-.imagenmision{
-        width:500px;
+
+.imagenmision {
+        width: 500px;
         margin-right: 50px;
-        margin-left: 22px; 
-        box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);     
-}   
-.vision{
-        background-color:$color-bc;
-        padding:5px;
+        margin-left: 22px;
+        box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
 }
-@media (max-width: 576px),(max-width:850px){
+
+.vision {
+        background-color: $color-bc;
+        padding: 5px;
+}
+
+@media (max-width: 576px),
+(max-width:850px) {
+
         .nosotros,
         .historia,
         .valores,
         .vision,
-        .mision{       
-             flex-direction: map-get($di-flex,direccion);
-             align-items: center;
-       
-       }
-       .nosotrosmain img{
-              width:80%;
-              height:80%;       
-       }
-} 
-.nosotrosmain{
-       h1{
-          font-family:$font-texto1;
-          color:$color-ter;          
-       }
-       h3{
-         font-weight: 300;
-         font-size: 21px;
-       }
-       p{ 
-         color:$color-ter;
-         font-weight: 300;
-         font-size: 19px;
-       }
+        .mision {
+                flex-direction: map-get($di-flex, direccion);
+                align-items: center;
+        }
+
+        .nosotrosmain img {
+                width: 80%;
+                height: 80%;
+        }
+}
+
+.nosotrosmain {
+        h1 {
+                font-family: $font-texto1;
+                color: $color-ter;
+        }
+
+        h3 {
+                font-weight: 300;
+                font-size: 21px;
+        }
+
+        p {
+                color: $color-ter;
+                font-weight: 300;
+                font-size: 19px;
+        }
 }

@@ -1,149 +1,173 @@
 /*index pagina*/
 .salaminportad {
-    display:map-get($di-flex,display);
-    flex-direction:map-get($di-flex,direccion);;
-    background-color:$color-bc;
-    color:$color-ter;
+    display: map-get($di-flex, display);
+    flex-direction: map-get($di-flex, direccion);
+    background-color: $color-bc;
+    color: $color-ter;
 
-     img{
-         width:100%;
-         object-fit:cover;
-         overflow:hidden;
-         height:650px;
-         box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
+    img {
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        height: 650px;
+        box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
+
+        @include media-mob(sm) {
+            width: 100%;
+            height: 85%;
+            padding: 15px;
+            object-fit: cover;
+            overflow: hidden;
+        }
     }
-     H1{
-         display:map-get($di-flex,display);
-         flex-direction: map-get($di-flex,direccion);
-         align-items: map-get($di-flex,alineado);
-         color:$color-ter;
-         font-size: 30px;
+
+    H1 {
+        display: map-get($di-flex, display);
+        flex-direction: map-get($di-flex, direccion);
+        align-items: map-get($di-flex, alineado);
+        color: $color-ter;
+        font-size: 30px;
+        margin: 7px;
     }
-     H3{
-         display:map-get($di-flex,display);
-         flex-direction: map-get($di-flex,direccion);
-         align-items: map-get($di-flex,alineado);
-         color:$color-titulo;
+
+    H3 {
+        display: map-get($di-flex, display);
+        flex-direction: map-get($di-flex, direccion);
+        align-items: map-get($di-flex, alineado);
+        color: $color-titulo;
+        margin: 7px;
     }
 }
 
-.index{
-    display:grid;
+
+.index {
+    display: grid;
     grid-template-columns: 45% 55%;
-    grid-template-rows:45% 25% 30%;
-    grid-template-areas:"jamonesin chacinadosin" 
-                        "salazonesin chacinadosin"
-                        "quesosin chacinadosin";
+    grid-template-rows: 45% 25% 30%;
+    grid-template-areas: "jamonesin chacinadosin"
+        "salazonesin chacinadosin"
+        "quesosin chacinadosin";
     column-gap: 10px;
     row-gap: 10px;
     margin: 30px;
 
-    @include media-mob(sm){
+    @include media-mob(sm) {
         div {
-             height:100%;
-             display:map-get($di-flex,display);
-             flex-direction: map-get($di-flex,direccion);
-             justify-content:map-get($di-flex,justificado);  
-                }
+            height: 100%;
+            display: map-get($di-flex, display);
+            flex-direction: map-get($di-flex, direccion);
+            justify-content: map-get($di-flex, justificado);
+
         }
+    }
 }
 
-.jamones img:hover, .salazones img:hover, .quesos img:hover , .chacinados img:hover{
+.jamones img:hover,
+.salazones img:hover,
+.quesos img:hover,
+.chacinados img:hover {
     transform: scale(1.03);
-}  
+}
+
 .jamones {
     grid-area: jamonesin;
     text-align: center;
 
-     img{
-         opacity:9;
-         @extend %imgtamaño;
-         height:190px;
-         border-radius:20px;
-         transition:all 0.6s;
-        }
+    img {
+        opacity: 9;
+        @extend %imgtamaño;
+        height: 190px;
+        border-radius: 20px;
+        transition: all 0.6s;
+    }
 }
+
 .salazones {
     grid-area: salazonesin;
     text-align: center;
 
-     img{
-         opacity: .9;
-         width:100%;
-         height:160px;
-         border-radius:20px;
-         transition:all 0.6s;
-        }
+    img {
+        opacity: .9;
+        width: 100%;
+        height: 160px;
+        border-radius: 20px;
+        transition: all 0.6s;
+    }
 }
-.quesos {
-   grid-area: quesosin;
-   text-align: center;
 
-     img{
-         opacity: .9;
-         width:100%;
-         height:160px;
-         border-radius:20px;
-         transition:all 0.6s;
-        }
+.quesos {
+    grid-area: quesosin;
+    text-align: center;
+
+    img {
+        opacity: .9;
+        width: 100%;
+        height: 160px;
+        border-radius: 20px;
+        transition: all 0.6s;
+    }
 }
+
 .chacinados {
     grid-area: chacinadosin;
     text-align: center;
 
-     img{
-         opacity: .9;
-         @extend %imgtamaño;
-         height:530px;
-         border-radius:20px;
-         transition:all 0.6s;
-        }
+    img {
+        opacity: .9;
+        @extend %imgtamaño;
+        height: 530px;
+        border-radius: 20px;
+        transition: all 0.6s;
+    }
 }
-.contcarouselin{
-    width:100%;
+
+.contcarouselin {
+    width: 100%;
     background-color: $color-bc;
     overflow: hidden;
 
-    @include media-mob(sm){
-      .letraenblock{
-           display:map-get($di-flex,display);
-           flex-direction: map-get($di-flex,direccion);
-           justify-content:map-get($di-flex,justificado);
-        } 
+    @include media-mob(sm) {
+        .letraenblock {
+            display: map-get($di-flex, display);
+            flex-direction: map-get($di-flex, direccion);
+            justify-content: map-get($di-flex, justificado);
+            font-size: 11px;
+        }
     }
 }
-.rowcarousel{
-    display:map-get($di-flex,display);
-    flex-direction: map-get($di-flex,direccion);
-    align-content: map-get($di-flex,justificado);
-    align-items: map-get($di-flex,alineado);
-    background-color:$color-bc;
-    padding:30px;
 
-     div img{
-         height:370px;
-         @extend %imgtamaño;
-         object-fit: cover;
+.rowcarousel {
+    display: map-get($di-flex, display);
+    flex-direction: map-get($di-flex, direccion);
+    align-content: map-get($di-flex, justificado);
+    align-items: map-get($di-flex, alineado);
+    background-color: $color-bc;
+    padding: 30px;
 
-        }
+    div img {
+        height: 370px;
+        @extend %imgtamaño;
+        object-fit: cover;
+
+    }
 }
-.carsom{
+
+.carsom {
     box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
 }
+
 /*videoabajoindex*/
 
 .iframelario {
-    display:map-get($di-flex,display);
+    display: map-get($di-flex, display);
     width: 60%;
 
-         h3{
-             display:map-get($di-flex,display);
-             padding-left: 8px;
-        }
+    h3 {
+        display: map-get($di-flex, display);
+        padding-left: 8px;
+    }
 
-    @include media-mob(sm){
-        .iframelario{
-             display:none;
-            }
-        }
+    @include media-mob(sm) {
+        display: none;
+    }
 }

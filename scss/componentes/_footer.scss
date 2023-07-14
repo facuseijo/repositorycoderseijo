@@ -1,34 +1,34 @@
 /*footer gral*/
-.footgral{
-     background: linear-gradient(90deg, rgb(108, 100, 75) 0%, rgba(247, 145, 80, 0.66) 50%, rgb(4, 184, 213) 100%);
-     box-shadow: $box-shadow-navfooter;
-      ul{
-         list-style-type: none;
-         display:map-get($di-flex,display);
-         flex-direction:map-get($di-flexx,direccion);
-         justify-content:flex-end;
-         color:$color-ter;
-          a{
-            display: block;
-            text-align: right;
-            padding: 14px 16px;
-            text-decoration: none;
-            img {
-                 height: 20px;
-                 margin: -5px 5px;
-                 }
-     ul{
-         @include media-mob(sm){
-             display:map-get($di-flex,display);
-             flex-direction: map-get($di-flex,direccion);
-             justify-content: flex-end;
-             height:140px;
-                } 
-        
-            }
-       }    
-    }
+.footgral {
+   background: linear-gradient(90deg, rgb(108, 100, 75) 0%, rgba(247, 145, 80, 0.66) 50%, rgb(4, 184, 213) 100%);
+   box-shadow: $box-shadow-navfooter;
+
+   ul {
+      list-style-type: none;
+      display: map-get($di-flex, display);
+      flex-direction: map-get($di-flexx, direccion);
+      justify-content: flex-end;
+      color: $color-ter;
+
+      /*coloque el mq aqui por que abajo dentro del ul como pide sass, no funciona*/
+      @include media-mob(sm) {
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-end;
+      }
+
+      a {
+         display: block;
+         text-align: right;
+         padding: 14px 16px;
+         text-decoration: none;
+
+         img {
+            height: 20px;
+            margin: -5px 5px;
+         }
+
+
+      }
+   }
 }
-
-
- 

@@ -1,56 +1,67 @@
-
 /*nosotros pagina*/
-.logisticarticle{
-       display: map-get($di-flex,display);
-       flex-direction:map-get($di-flex,direccion);
-       align-items:map-get($di-flex,alineado);
-       margin:45px;
+.logisticarticle {
+       display: map-get($di-flex, display);
+       flex-direction: map-get($di-flex, direccion);
+       align-items: map-get($di-flex, alineado);
+       margin: 45px;
 }
-.container-fluidlogistic{
-       background-color:$color-bc;
+
+.container-fluidlogistic {
+       background-color: $color-bc;
        padding: 15px;
 }
-.rowlogistic{
-      column-gap: 30px;
-      row-gap: 20px;
-      margin: 10px;
-      padding-left: 30px;
-     div {
-      background-color:rgba(206, 198, 198, 0.967);
-     }
-     h4 {
-       color:$color-titulo;
-     }
-}
-.card1log, .card2log, .card3log, .card4log{
-       border-radius: none;
-       overflow:hidden;
-}
-.logistipresentacion{
-       display:map-get($di-flex,display);
-       flex-direction: map-get($di-flex,direccion);
-       align-items: map-get($di-flex,alineado);
-       margin: 5px;
-}
-.contcarousellog{
-       opacity: .9;
-       @extend %imgtamaño;
-       padding:20px;
-       background-color:$color-bc;
-       overflow: hidden; 
-}
-.rowconcar{
-       display:map-get($di-flex,display);
-       flex-direction: map-get($di-flex,direccion);
-        align-content: map-get($di-flex,justificado);
-       align-items: map-get($di-flex,alineado);
-       width:700px;
 
-     @include media-mob(sm){
-        width:100%; 
-    }   
+.rowlogistic {
+       column-gap: 30px;
+       row-gap: 20px;
+       margin: 10px;
+       padding-left: 30px;
+
+       div {
+              background-color: rgba(206, 198, 198, 0.967);
+       }
+
+       h4 {
+              color: $color-titulo;
+       }
 }
-.carancho{
+
+.card1log,
+.card2log,
+.card3log,
+.card4log {
+       border-radius: none;
+       overflow: hidden;
        box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
 }
-        
+
+.logistipresentacion {
+       display: map-get($di-flex, display);
+       flex-direction: map-get($di-flex, direccion);
+       align-items: map-get($di-flex, alineado);
+       margin: 5px;
+}
+
+.contcarousellog {
+       opacity: .9;
+       @extend %imgtamaño;
+       padding: 20px;
+       background-color: $color-bc;
+       overflow: hidden;
+}
+
+.rowconcar {
+       display: map-get($di-flex, display);
+       flex-direction: map-get($di-flex, direccion);
+       align-content: map-get($di-flex, justificado);
+       align-items: map-get($di-flex, alineado);
+       width: 700px;
+
+       @include media-mob(sm) {
+              width: 100%;
+       }
+}
+
+.carancho {
+       box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
+}

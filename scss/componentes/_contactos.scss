@@ -1,37 +1,35 @@
 /*nosotros pagina*/
 .prcontacto {
-       @extend %tituloPpal;
-       display:map-get($di-flex,display);
-       flex-direction:map-get($di-flex,direccion);
-       align-items: flex-start;
-       padding: 0 0 0 15px;
-       background-color:$color-bc;
-       color:$color-ter;
-       padding: 15px;
-}
-.mapacontacto{
-       display: map-get($di-flex,display);
-       flex-direction:map-get($di-flex,direccion);
-       align-items: map-get($di-flex,alineado);
-       margin-left: 140px;
-
-       @include media-mob(sm){
-         div iframe {
-             display: inline;
-             margin: 10px;
-             padding: 25px;
-             width: 100%;
-            } 
-        }
-}
-.contactoh1{
       @extend %tituloPpal;
-      display:map-get($di-flex,display);
-      flex-direction: map-get($di-flex,direccion);
-      align-items: map-get($di-flex,alineado);
-      margin: 22px;  
+      display: map-get($di-flex, display);
+      flex-direction: map-get($di-flex, direccion);
+      align-items: flex-start;
+      padding: 0 0 0 15px;
+      background-color: $color-bc;
+      color: $color-ter;
+      padding: 15px;
 }
-.formu{
+
+.mapacontacto {
+      display: map-get($di-flex, display);
+      flex-direction: map-get($di-flex, direccion);
+      align-items: map-get($di-flex, alineado);
+
+      @include media-mob(sm) {
+            div iframe {
+                  padding: 15px;
+            }
+      }
+}
+
+.contactoh1 {
+      @extend %tituloPpal;
+      display: map-get($di-flex, display);
+      flex-direction: map-get($di-flex, direccion);
+      align-items: map-get($di-flex, alineado);
+      margin: 22px;
+}
+
+.formu {
       margin: 25px;
 }
-

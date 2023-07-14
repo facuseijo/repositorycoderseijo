@@ -1,20 +1,18 @@
+$di-flex: (
+  display:flex,
+  direccion: column,
+  justificado:center,
+  alineado:center,
+);
 
-  $di-flex:(
-   display:flex,
-   direccion: column,
-   justificado:center,
-   alineado:center,
-  );
+$di-flexx: (
+  display:flex,
+  direccion:row,
+  justificado:flex-start,
+  alineado:flex-start,
+);
 
-  $di-flexx:(
-    display:flex,
-    direccion:row,
-    justificado:flex-start,
-    alineado:flex-start,
-  );
-
-  $breakpoints:(
-    sm:576px,
-    md:850px,
-  );
-
+$breakpoints: (
+  sm:576px,
+  md:850px,
+);
