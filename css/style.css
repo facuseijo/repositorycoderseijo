@@ -140,10 +140,9 @@
 
 .jamones {
   grid-area: jamonesin;
-  text-align: center;
 }
 .jamones img {
-  opacity: 9;
+  opacity: 0.9;
   height: 190px;
   border-radius: 20px;
   transition: all 0.6s;
@@ -151,7 +150,6 @@
 
 .salazones {
   grid-area: salazonesin;
-  text-align: center;
 }
 .salazones img {
   opacity: 0.9;
@@ -163,7 +161,6 @@
 
 .quesos {
   grid-area: quesosin;
-  text-align: center;
 }
 .quesos img {
   opacity: 0.9;
@@ -175,7 +172,6 @@
 
 .chacinados {
   grid-area: chacinadosin;
-  text-align: center;
 }
 .chacinados img {
   opacity: 0.9;

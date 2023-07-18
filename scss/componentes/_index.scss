@@ -71,10 +71,9 @@
 
 .jamones {
     grid-area: jamonesin;
-    text-align: center;
 
     img {
-        opacity: 9;
+        opacity: 0.9;
         @extend %imgtamaño;
         height: 190px;
         border-radius: 20px;
@@ -84,10 +83,9 @@
 
 .salazones {
     grid-area: salazonesin;
-    text-align: center;
 
     img {
-        opacity: .9;
+        opacity: 0.9;
         width: 100%;
         height: 160px;
         border-radius: 20px;
@@ -97,10 +95,9 @@
 
 .quesos {
     grid-area: quesosin;
-    text-align: center;
 
     img {
-        opacity: .9;
+        opacity: 0.9;
         width: 100%;
         height: 160px;
         border-radius: 20px;
@@ -110,10 +107,9 @@
 
 .chacinados {
     grid-area: chacinadosin;
-    text-align: center;
 
     img {
-        opacity: .9;
+        opacity: 0.9;
         @extend %imgtamaño;
         height: 530px;
         border-radius: 20px;
