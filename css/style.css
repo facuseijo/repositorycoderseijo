@@ -498,9 +498,8 @@
 
 body {
   overflow-x: hidden;
-  margin: 5px;
-  padding: 5px 5px;
-  margin: 6px;
+  padding: 2px;
+  margin: 2px;
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
