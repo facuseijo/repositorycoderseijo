@@ -65,13 +65,20 @@
         .valores,
         .vision,
         .mision {
+                display: map-get($di-flex, display);
                 flex-direction: map-get($di-flex, direccion);
+                flex-direction: map-get($di-flex, justificado);
                 align-items: center;
+                padding:2px 4px 2px 4px;
         }
 
         .nosotrosmain img {
-                width: 80%;
-                height: 80%;
+                display: map-get($di-flex, display);
+                flex-direction: map-get($di-flex, direccion);
+                align-items: center;
+                width: 80vw;
+                height: 60vw;
+                padding: 2px 8px 2px 8px;
         }
 }
 

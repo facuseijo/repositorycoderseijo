@@ -2,7 +2,6 @@
 .salaminportada {
     display: map-get($di-flex, display);
     flex-direction: map-get($di-flex, direccion);
-    background-color: $color-bc;
     color: $color-ter;
 
     img {
@@ -11,6 +10,7 @@
         object-fit: cover;
         overflow: hidden;
         height: 650px;
+        padding-right:8px;
         box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
 
         @include media-mob(sm) {
@@ -57,22 +57,25 @@
         div img{
             height: 90px;
             width:91vw;
+            object-fit: cover;
         }
-    }    
-}
-.familiaprod {
-    display: map-get($di-flex, display);
-    flex-direction: map-get($di-flex, direccion);
-    align-items: map-get($di-flex, alineado);
-    $color-titulo: #123565;
-    font-size: 30px;
-    margin: 7px;
-
-@include media-mob(sm) {
-    padding-top: 365px;
-    height: 100vw;
+    }   
+    .familiaprod {
+        display: map-get($di-flex, display);
+        flex-direction: map-get($di-flex, direccion);
+        align-items: map-get($di-flex, alineado);
+        $color-titulo: #123565;
+        font-size: 30px;
+        margin: 3px;
+    
+    @include media-mob(sm) {
+        height: 100vw;
+        padding-bottom:10px;
+        }
     }
+
 }
+
 
 .jamones img:hover,
 .salazones img:hover,
@@ -131,9 +134,11 @@
 
 .contcarouselin {
     width: 100%;
-    background-color: $color-bc;
     overflow: hidden;
 
+    @include media-mob(sm) {
+        padding-top: 430px;
+    }
     @include media-mob(sm) {
         .letraenblock {
             display: map-get($di-flex, display);

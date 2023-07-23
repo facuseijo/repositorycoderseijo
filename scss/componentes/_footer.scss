@@ -10,7 +10,6 @@
       justify-content: flex-end;
       color: $color-ter;
 
-      /*coloque el mq aqui por que abajo dentro del ul como pide sass, no funciona*/
       @include media-mob(sm) {
          display: flex;
          flex-direction: column;
@@ -22,6 +21,7 @@
          text-align: right;
          padding: 14px 16px;
          text-decoration: none;
+         color: $color-ter;
 
          img {
             height: 20px;

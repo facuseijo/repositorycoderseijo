@@ -54,7 +54,6 @@
   flex-direction: row;
   justify-content: flex-end;
   color: white;
-  /*coloque el mq aqui por que abajo dentro del ul como pide sass, no funciona*/
 }
 @media screen and (max-width: 576px) {
   .footgral ul {
@@ -68,6 +67,7 @@
   text-align: right;
   padding: 14px 16px;
   text-decoration: none;
+  color: white;
 }
 .footgral ul a img {
   height: 20px;
@@ -78,7 +78,6 @@
 .salaminportada {
   display: flex;
   flex-direction: column;
-  background-color: rgba(4, 144, 213, 0.88);
   color: white;
 }
 .salaminportada img {
@@ -87,6 +86,7 @@
   object-fit: cover;
   overflow: hidden;
   height: 650px;
+  padding-right: 8px;
   box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
 }
 @media screen and (max-width: 576px) {
@@ -132,20 +132,20 @@
   .index div img {
     height: 90px;
     width: 91vw;
+    object-fit: cover;
   }
 }
-
-.familiaprod {
+.index .familiaprod {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 30px;
-  margin: 7px;
+  margin: 3px;
 }
 @media screen and (max-width: 576px) {
-  .familiaprod {
-    padding-top: 365px;
+  .index .familiaprod {
     height: 100vw;
+    padding-bottom: 10px;
   }
 }
 
@@ -197,8 +197,12 @@
 
 .contcarouselin {
   width: 100%;
-  background-color: rgba(4, 144, 213, 0.88);
   overflow: hidden;
+}
+@media screen and (max-width: 576px) {
+  .contcarouselin {
+    padding-top: 430px;
+  }
 }
 @media screen and (max-width: 576px) {
   .contcarouselin .letraenblock {
@@ -404,12 +408,19 @@
   .valores,
   .vision,
   .mision {
+    display: flex;
     flex-direction: column;
+    flex-direction: center;
     align-items: center;
+    padding: 2px 4px 2px 4px;
   }
   .nosotrosmain img {
-    width: 80%;
-    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 60vw;
+    padding: 2px 8px 2px 8px;
   }
 }
 .nosotrosmain h1 {
@@ -513,8 +524,7 @@
 
 body {
   overflow-x: hidden;
-  padding: 2px;
-  margin: 2px;
+  margin: 3px;
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
