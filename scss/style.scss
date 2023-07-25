@@ -13,48 +13,54 @@
 @import './componentes/productos';
 
 * {
-    margin: 0;
-    padding: 0;
-} 
+  margin: 0;
+  padding: 0;
+}
+
 body {
-     overflow-x:hidden;
-     margin:3px;
-     background-color:$color-sec!important; 
-     }
-      h1{
-         font-family:$font-title!important;
-         color:$color-titulo;
-        }
-      h2{
-         font-family:$font-texto1;
-         margin: 10px 0;
-         color:$color-titulo;
-         font-weight:$font-weighth;  
-         font-size: 28px;
-        }
-      h3{
-         font-family:$font-title;
-         margin: 10px 0;
-         color:$color-titulo;
-         font-weight:$font-weighth;  
-         font-size: 23px;
-        }
-      h4{
-         font-family:$font-title;
-         color:$color-textop2;
-         font-size: 21px;
-         font-weight:$font-weighth;  
-        }
-      h5{
-         font-family:$font-texto2;
-         color:$color-titulo;
-         font-size:$font-size5;
-         font-weight:$font-weighth;  
-        }
-       p{
-         font-family:$font-texto2;
-         color:$color-textop;
-         font-weight: 400;
-         font-size: 22px;
-         }
-        
+  overflow-x: hidden;
+  margin: 3px;
+  background-color: $color-sec !important;
+}
+
+h1 {
+  font-family: $font-title !important;
+  color: $color-titulo;
+}
+
+h2 {
+  font-family: $font-texto1;
+  margin: 10px 0;
+  color: $color-titulo;
+  font-weight: $font-weighth;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: $font-title;
+  margin: 10px 0;
+  color: $color-titulo;
+  font-weight: $font-weighth;
+  font-size: 23px;
+}
+
+h4 {
+  font-family: $font-title;
+  color: $color-textop2;
+  font-size: 21px;
+  font-weight: $font-weighth;
+}
+
+h5 {
+  font-family: $font-texto2;
+  color: $color-titulo;
+  font-size: $font-size5;
+  font-weight: $font-weighth;
+}
+
+p {
+  font-family: $font-texto2;
+  color: $color-textop;
+  font-weight: 400;
+  font-size: 22px;
+}

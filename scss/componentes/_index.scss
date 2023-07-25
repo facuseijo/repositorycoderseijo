@@ -5,22 +5,24 @@
     color: $color-ter;
 
     img {
-        position:absolute;
-        width: 100%;
+        position: absolute;
+        width: 98.7vw;
         object-fit: cover;
         overflow: hidden;
         height: 650px;
-        padding-right:8px;
+        padding-right: 5px;
         box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
 
         @include media-mob(sm) {
-            width: 100vw;
-            }
+            width: 99.2vw;
+            height: 110vw;
+            padding-left: 2px;
+        }
     }
 
-    H1 {       
+    H1 {
         margin: 45px 0px 0px 7px;
-        position:absolute;
+        position: absolute;
         font-size: 3rem;
         font-weight: 350;
         color: $color-ter;
@@ -29,7 +31,8 @@
         @include media-mob(sm) {
             font-size: 1.5rem;
             font-weight: 300;
-            }
+            margin: 45px 8px 0px 4px;
+        }
     }
 }
 
@@ -39,27 +42,29 @@
     grid-template-columns: 45% 55%;
     grid-template-rows: 45% 25% 30%;
     grid-template-areas: "jamonesin chacinadosin"
-                         "salazonesin chacinadosin"
-                         "quesosin chacinadosin";
+        "salazonesin chacinadosin"
+        "quesosin chacinadosin";
     column-gap: 10px;
     row-gap: 10px;
     margin: 30px;
     padding-top: 630px;
-    
+
     @include media-mob(sm) {
         display: map-get($di-flex, display);
         flex-direction: map-get($di-flex, direccion);
-        padding-top: 650px;
+        padding-top: 400px;
         height: 100vw;
         margin: 15px;
     }
+
     @include media-mob(sm) {
-        div img{
+        div img {
             height: 90px;
-            width:91vw;
+            width: 91vw;
             object-fit: cover;
         }
-    }   
+    }
+
     .familiaprod {
         display: map-get($di-flex, display);
         flex-direction: map-get($di-flex, direccion);
@@ -67,10 +72,10 @@
         $color-titulo: #123565;
         font-size: 30px;
         margin: 3px;
-    
-    @include media-mob(sm) {
-        height: 100vw;
-        padding-bottom:10px;
+
+        @include media-mob(sm) {
+            height: 100vw;
+            padding-bottom: 10px;
         }
     }
 
@@ -82,7 +87,7 @@
 .quesos img:hover,
 .chacinados img:hover {
     transform: scale(1.03);
-    
+
 }
 
 .jamones {
@@ -138,7 +143,9 @@
 
     @include media-mob(sm) {
         padding-top: 430px;
+        width: 97.2vw;
     }
+
     @include media-mob(sm) {
         .letraenblock {
             display: map-get($di-flex, display);

@@ -28,6 +28,21 @@
 
         &:hover {
             color: #43c4f3ce;
+            font-weight: bold;
+        }
+
+        @include media-mob(sm) {
+            color: rgb(214, 231, 236);
+
+            &:hover {
+                color: #43c4f3ce;
+                font-weight: bold;
+            }
+
+            &:visited {
+                color: #75b2c9ce;
+                font-weight: bold;
+            }
         }
     }
 }
