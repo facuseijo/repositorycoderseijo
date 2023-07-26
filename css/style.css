@@ -105,7 +105,7 @@
 }
 @media screen and (max-width: 576px) {
   .salaminportada img {
-    width: 99.2vw;
+    width: 96vw;
     height: 90vw;
     padding-left: 2px;
   }
@@ -220,7 +220,7 @@
 @media screen and (max-width: 576px) {
   .contcarouselin {
     padding-top: 430px;
-    width: 97.2vw;
+    width: 95vw;
   }
 }
 @media screen and (max-width: 576px) {
