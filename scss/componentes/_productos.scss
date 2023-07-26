@@ -36,19 +36,16 @@
      margin: 10px;
 
      @include media-mob(sm) {
+          display: map-get($di-flex, display);
+          flex-direction: map-get($di-flex, direccion);
+          align-items: map-get($di-flex, alineado);
 
-          .row1mio,
-          .row2mio,
-          .row3mio {
-               flex-direction: map-get($di-flex, direccion);
-               align-items: map-get($di-flex, alineado);
-
-               div {
-                    background-color: rgba(206, 198, 198, 0.967);
-               }
+          div {
+               background-color: rgba(206, 198, 198, 0.967);
           }
      }
 }
+
 
 .card1mia img,
 .card2mia img,

@@ -15,7 +15,7 @@
 
         @include media-mob(sm) {
             width: 99.2vw;
-            height: 110vw;
+            height: 90vw;
             padding-left: 2px;
         }
     }
@@ -52,9 +52,10 @@
     @include media-mob(sm) {
         display: map-get($di-flex, display);
         flex-direction: map-get($di-flex, direccion);
-        padding-top: 400px;
+        margin-top: 510vw;
         height: 100vw;
         margin: 15px;
+        padding-top: 510px;
     }
 
     @include media-mob(sm) {

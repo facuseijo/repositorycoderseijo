@@ -17,6 +17,12 @@
        margin: 10px;
        padding-left: 30px;
 
+       @include media-mob(sm) {
+              display: map-get($di-flex, display);
+              flex-direction: map-get($di-flex, direccion);
+              align-items: map-get($di-flex, alineado);
+       }
+
        div {
               background-color: rgba(206, 198, 198, 0.967);
        }

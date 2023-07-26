@@ -106,7 +106,7 @@
 @media screen and (max-width: 576px) {
   .salaminportada img {
     width: 99.2vw;
-    height: 110vw;
+    height: 90vw;
     padding-left: 2px;
   }
 }
@@ -140,9 +140,10 @@
   .index {
     display: flex;
     flex-direction: column;
-    padding-top: 400px;
+    margin-top: 510vw;
     height: 100vw;
     margin: 15px;
+    padding-top: 510px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -314,6 +315,13 @@
   row-gap: 20px;
   margin: 10px;
   padding-left: 30px;
+}
+@media screen and (max-width: 576px) {
+  .rowlogistic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .rowlogistic div {
   background-color: rgba(206, 198, 198, 0.967);
@@ -492,27 +500,16 @@
   margin: 10px;
 }
 @media screen and (max-width: 576px) {
-  .row1mio .row1mio,
-  .row1mio .row2mio,
-  .row1mio .row3mio,
-  .row2mio .row1mio,
-  .row2mio .row2mio,
-  .row2mio .row3mio,
-  .row3mio .row1mio,
-  .row3mio .row2mio,
-  .row3mio .row3mio {
+  .row1mio,
+  .row2mio,
+  .row3mio {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .row1mio .row1mio div,
-  .row1mio .row2mio div,
-  .row1mio .row3mio div,
-  .row2mio .row1mio div,
-  .row2mio .row2mio div,
-  .row2mio .row3mio div,
-  .row3mio .row1mio div,
-  .row3mio .row2mio div,
-  .row3mio .row3mio div {
+  .row1mio div,
+  .row2mio div,
+  .row3mio div {
     background-color: rgba(206, 198, 198, 0.967);
   }
 }
