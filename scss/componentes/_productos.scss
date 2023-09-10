@@ -64,3 +64,49 @@
      box-shadow: 0px 0px 8px 0px rgb(239, 204, 204);
      object-fit: cover;
 }
+
+/*Estilos para js*/
+
+.shop-content {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     margin-top: 30px;
+     margin-left: 80px;
+     margin-right: 80px;
+
+}
+
+.cardprod {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+     max-width: 300px;
+     margin: auto;
+     text-align: center;
+     font-family: arial;
+     img {
+          width: 95%;
+          height: 250px;
+          }
+
+     button {
+          border: none;
+          outline: 0;
+          padding: 12px;
+          color: white;
+          background-color: black;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+          font-size: 18px;
+
+          &:hover {
+               opacity: 0.7;
+          }
+     }
+
+}
+
+.price {
+     color: gray;
+     font-size: 35x;
+}
