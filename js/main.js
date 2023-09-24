@@ -1,162 +1,78 @@
+const productos = [
+    {
+       id:1,
+       nombre: "Paleta Cocida Cagnoli",
+       precio: 1840,
+       img:   "../images/fiambre_de_cerdo.png",
+    },
+    {
+       id:2,
+       nombre: "Jamon Cocido Cagnoli",
+       precio: 3400,
+       img: "../images/jamoncocido_Cagnoli.png",
+    },
+    {
+       id:3,
+       nombre: "Jamon Natural Cagnoli",
+       precio: 4900,
+       img:  "../images/natu.jpeg",
+    },
+    {
+       id:4,
+       nombre: "Lomo Ahumado Lario",
+       precio: 3810,
+       img: "../images/lomo.jpg",
+    },
+    {
+       id:5,
+       nombre: "Mortadela Bocha Calchaqui",
+       precio: 2110,
+       img:  "../images/bocha.png",
+    },
+    {
+       id:6,
+       nombre: "Panceta Ahumada Bierzo",
+       precio: 4500,
+       img:  "../images/pancetabierzo.jpg",
+    },
+    {
+       id:7,
+       nombre: "Salamines Cagnoli",
+       precio: 5380,
+       img: "../images/salamines.jpg",
+    },
+    {
+       id:8,
+       nombre: "Salame Cagnoli",
+       precio: 4060,
+       img: "../images/milan.png",
+    },
+    {
+       id:9,
+       nombre: "Jamon Crudo Weber",
+       precio: 4110,
+       img: "../images/crudo.jpg",
+    },
+    {
+       id:10,
+       nombre: "Cantimpalo Lario",
+       precio: 3810,
+       img: "../images/cantimpalo.jpg",
+    },
+    {
+       id:11,
+       nombre: "Holanda Varense",
+       precio: 2900,
+       img: "../images/varense.jpeg",
+    },
+    {
+       id:12,
+       nombre: "Reggiano Silvia",
+       precio: 3580,
+       img: "../images/reggiano.jpg",
+    },
+];
 
-// Nuevo codigo 3er entrega
-/* Estoy terminando a la par el carro con el del proyecto d dweb que era la idea final para la ultima entrega, seguramente este finde ya entregue casi todo el proceso*/
-
-/*
-
-const cards = document.getElementById('cards')
-const templateCard = document.getElementById('template-card').content
-const items = document.getElementById('items')
-const footer = document.getElementById('footer')
-const templateFooter = document.getElementById('template-footer').content
-const templateCarrito = document.getElementById('template-carrito').content
-const fragment = document.createDocumentFragment()
-let carrito = {}
-
-
-document.addEventListener('DOMContentLoaded', ()=>{
-	fetchData()
-	if(localStorage.getItem('carrito')){
-		carrito = JSON.parse(localStorage.getItem('carrito'))
-		pintarCarrito()
-	}
-}
-)
-
-cards.addEventListener('click', e =>{
-	addCarrito(e)
-})
-
-items.addEventListener('click', e=>{
-	btnAccion(e)
-})
-
-const fetchData = async()=>{
-	try{
-		const res = await fetch('productos.json')
-		const data = await res.json()
-		pintarCard(data)
-
-	}catch(error){
-		console.log(error)
-	}
-}
-
-const pintarCard = data=>{
-	data.forEach(item => {
-		templateCard.querySelector('h5').textContent = item.title
-		templateCard.querySelector('p').textContent = item.precio
-		templateCard.querySelector('img').setAttribute('src', item.thumbnailUrl)
-		templateCard.querySelector('.btn-dark').dataset.id = item.id
-		const clone = templateCard.cloneNode(true)
-		fragment.appendChild(clone)
-	})
-	cards.appendChild(fragment)
-}
-
-const addCarrito = e =>{
-	//console.log(e.target)
-	//console.log(e.target.classList.contains('btn-dark'))
-	if(e.target.classList.contains('btn-dark')){
-		setCarrito(e.target.parentElement)
-	}
-
-e.stopPropagation()
-}
-
-
-
-const setCarrito = item => {
-	//console.log(objeto)
-	const producto = {
-		title: item.querySelector('h5').textContent,
-		precio: item.querySelector('p').textContent,
-		id: item.querySelector('.btn-dark').dataset.id,
-		cantidad: 1
-	}
-
-	if(carrito.hasOwnProperty(producto.id)){
-		producto.cantidad = carrito[producto.id].cantidad + 1
-	}
-
-	carrito[producto.id] = { ...producto}
-	pintarCarrito()
-}
-
-const pintarCarrito = ()=> {
-	
-	items.innerHTML = ''
-	Object.values(carrito).forEach(producto => {
-		templateCarrito.querySelector('th').textContent = producto.id
-		templateCarrito.querySelectorAll('td')[0].textContent = producto.title
-		templateCarrito.querySelectorAll('td')[1].textContent = producto.cantidad
-		templateCarrito.querySelector('.btn-info').dataset.id = producto.id
-		templateCarrito.querySelector('.btn-danger').dataset.id = producto.id
-		templateCarrito.querySelector('span').textContent = producto.cantidad * producto.precio
-		const clone = templateCarrito.cloneNode(true)
-		fragment.appendChild(clone)
-	})
-
-	items.appendChild(fragment)
-
-	pintarFooter()
-
-	localStorage.setItem('carrito', JSON.stringify(carrito))
-
-}
-
-const pintarFooter = () => {
-		footer.innerHTML = ''
-		if(Object.keys(carrito).length === 0){
-			footer.innerHTML = `
-			<th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
-			`
-			return
-		}
-
-		const nCantidad = Object.values(carrito).reduce((acc, {cantidad})=> acc + cantidad, 0)
-		const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0)
-		
-		templateFooter.querySelectorAll('td')[0].textContent = nCantidad
-		templateFooter.querySelector('span').textContent = nPrecio
-	
-		const clone = templateFooter.cloneNode(true)
-		fragment.appendChild(clone)
-		footer.appendChild(fragment)
-	
-		const btnVaciar = document.getElementById('vaciar-carrito')
-		btnVaciar.addEventListener('click', ()=>{
-			carrito = {}
-			pintarCarrito()
-		})
-	}
-
-
-const btnAccion = e =>{
-	
-	if(e.target.classList.contains('btn-info')){
-		
-		const producto = carrito[e.target.dataset.id]
-		producto.cantidad++
-
-		carrito[e.target.dataset.id] = {...producto}
-		pintarCarrito()
-	}
-
-	if(e.target.classList.contains('btn-danger')){
-		const producto = carrito[e.target.dataset.id]
-		producto.cantidad--
-		if(producto.cantidad ===0){
-			delete carrito[e.target.dataset.id]
-		}
-		pintarCarrito()
-
-	}
-
-	e.stopPropagation()
-}
-
-------------------------------------------------------------      */
 
 const shopContent = document.querySelector("#shopcontent");
 const verCarrito = document.querySelector("#verCarrito");
@@ -216,10 +132,10 @@ verCarrito.addEventListener("click", () => {
 		let carritoContent = document.createElement("div")
 		carritoContent.className = "modal-content";
 		carritoContent.innerHTML = `
-	     <img src="${product.img}">
-         <h3>${product.nombre}</h3>
-	     <p>${product.precio}$</p>
-	    `;
+		 <img src="${product.img}">
+		 <h3>${product.nombre}</h3>
+		 <p>${product.precio}$</p>
+		`;
 
 		modalContainer.append(carritoContent);
 	});
@@ -232,4 +148,6 @@ verCarrito.addEventListener("click", () => {
 
 	modalContainer.append(totalBuy);
 	
+	
 });
+
