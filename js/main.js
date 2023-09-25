@@ -2,6 +2,7 @@
 const shopContent = document.querySelector("#shopcontent");
 const verCarrito = document.querySelector("#verCarrito");
 const modalContainer = document.querySelector("#modal-container");
+const cantidadCarrito = document.querySelector("#cantidadCarrito");
 
 let carrito = []
 
@@ -24,7 +25,7 @@ productos.forEach((product) => {
 
 	Comprar.addEventListener("click", () => {
 		// funcion sumar de a un producto si se repite el id en la compra
-		const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.Id);
+		const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.id);
 
 		if (repeat) {
 			carrito.map((prod) => {
@@ -41,6 +42,7 @@ productos.forEach((product) => {
 				cantidad: product.cantidad,
 			});
 			console.log(carrito);
+			carritoCounter();
 		};
 	});
 });

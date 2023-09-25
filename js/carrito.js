@@ -28,10 +28,11 @@ renderCarrito = () => {
 		 <h3>${product.nombre}</h3>
 		 <p>${product.precio}$</p>
          <p>Cantidad: ${product.cantidad}</p>
+         <p>Total: ${product.cantidad * product.precio}</p>
 		`;
 
         modalContainer.append(carritoContent);
-
+console.log(length);
         let eliminar = document.createElement("span");
         eliminar.innerText = "✖";
         eliminar.className = "delete-product";
@@ -40,7 +41,7 @@ renderCarrito = () => {
         eliminar.addEventListener("click", eliminarProducto);
     });
 
-    const total = carrito.reduce((acc, el) => acc + el.precio, 0);
+    const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad , 0);
 
     const totalBuy = document.createElement("div");
     totalBuy.classname = "total-content";
@@ -59,7 +60,12 @@ const eliminarProducto = () => {
     return carritoId !== foundId;
     });
 
+   carritoCounter();
    renderCarrito();
 };
 
+const carritoCounter = () => {
+    cantidadCarrito.style.display = "block";
+    cantidadCarrito.innerText = carrito.length;
+};
 
