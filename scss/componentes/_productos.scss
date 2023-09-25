@@ -65,36 +65,38 @@
 
 
 .modal-container {
-     width: 80%;
-     margin: 0 10%;
-     max-height: 88vh;
+     width: 70%;
+     margin: 0 10px;
+     max-height: 80vw;
      color: #fff;
      background-color: #121212;
      display: flex;
      flex-direction: column;
      align-items: center;
-     position: fixed;
-     overflow: auto;
+     // top
+    //position: fixed;
+     overflow: hidden;
      z-index: 9;
-     top: 12vs;
+     top: 12vh;
      scrollbar-color: none;
 
-     img {
+     >div>img {
           height: 120px;
           width: 120px;
      }
 
-     &:-webkit-scrollbar {
+     &::-webkit-scrollbar {
           display: none;
      }
-}
-.modal-content {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     align-items: center;
-     width: 70%;
-     margin: 10 px;
+
+     >.modal-content {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          width: 70%;
+          margin: 10px;
+     }
 }
 
 .modal-header {
@@ -104,11 +106,11 @@
      color: #fff;
      width: 100%;
 
-     title {
+     .modal-header-title {
           justify-self: start;
      }
 
-     button {
+     .modal-header-button {
           cursor: pointer;
      }
 }
@@ -120,5 +122,7 @@
      padding-top: 20px;
 }
 
-
- 
+/* delete button product*/
+.delete-product {
+     cursor: pointer;
+}
