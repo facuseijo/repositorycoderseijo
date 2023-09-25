@@ -23,12 +23,25 @@ productos.forEach((product) => {
 	content.append(Comprar);
 
 	Comprar.addEventListener("click", () => {
-		carrito.push({
-			id: product.id,
-			img: product.img,
-			nombre: product.nombre,
-			precio: product.precio,
-		});
+		// funcion sumar de a un producto si se repite el id en la compra
+		const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.Id);
+
+		if (repeat) {
+			carrito.map((prod) => {
+				if (prod.id === product.id) {
+				 prod.cantidad++;
+				}
+			});
+		} else {
+			carrito.push({
+				id: product.id,
+				img: product.img,
+				nombre: product.nombre,
+				precio: product.precio,
+				cantidad: product.cantidad,
+			});
+			console.log(carrito);
+		};
 	});
 });
 
