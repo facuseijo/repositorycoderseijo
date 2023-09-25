@@ -1,4 +1,5 @@
 
+
 renderCarrito = () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "flex";
@@ -32,7 +33,7 @@ renderCarrito = () => {
 		`;
 
         modalContainer.append(carritoContent);
-console.log(length);
+
         let eliminar = document.createElement("span");
         eliminar.innerText = "✖";
         eliminar.className = "delete-product";
@@ -66,6 +67,12 @@ const eliminarProducto = () => {
 
 const carritoCounter = () => {
     cantidadCarrito.style.display = "block";
-    cantidadCarrito.innerText = carrito.length;
+
+    const carritoLength = carrito.length;
+
+    localStorage.setItem("carritoLength", JSON.stringify(carritoLength));
+
+    cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));
 };
 
+carritoCounter();
