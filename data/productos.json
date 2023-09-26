@@ -1,76 +1,87 @@
-/*
+
 [
    {
       "id":1,
       "nombre":"Paleta Cocida Cagnoli",
       "precio":1840,
-      "img":"./images/fiambre_de_cerdo.png"
+      "img":"../images/fiambre_de_cerdo.png",
+      "cantidad": 1
    },
    {
       "id":2,
       "nombre":"Jamon Cocido Cagnoli",
       "precio":3400,
-      "img":"./images/jamoncocido_Cagnoli.png"
+      "img":"../images/jamoncocido_Cagnoli.png",
+      "cantidad": 2
    },
    {
       "id":3,
       "nombre":"Jamon Natural Cagnoli",
       "precio":4900,
-      "img":"./images/natu.jpeg"
+      "img":"../images/natu.jpeg",
+      "cantidad": 3
    },
    {
       "id":4,
       "nombre":"Lomo Ahumado Lario",
       "precio":3810,
-      "img":"./images/lomo.jpg"
+      "img":"../images/lomo.jpg",
+      "cantidad": 4
    },
    {
       "id":5,
       "nombre":"Mortadela Bocha Calchaqui",
       "precio":2110,
-      "img":"./images/bocha.png"
+      "img":"../images/bocha.png",
+      "cantidad": 5
    },
    {
       "id":6,
       "nombre":"Panceta Ahumada Bierzo",
       "precio":4500,
-      "img":"./images/pancetabierzo.jpg"
+      "img":"../images/pancetabierzo.jpg",
+      "cantidad": 6
    },
    {
       "id":7,
       "nombre":"Salamines Cagnoli",
       "precio":5380,
-      "img":"./images/salamines.jpg"
+      "img":"../images/salamines.jpg",
+      "cantidad": 7
    },
    {
       "id":8,
       "nombre":"Salame Cagnoli",
       "precio":4060,
-      "img":"./images/milan.png"
+      "img":"../images/milan.png",
+      "cantidad": 8
    },
    {
       "id":9,
       "nombre":"Jamon Crudo Weber",
       "precio":4110,
-      "img":"./images/crudo.jpg"
+      "img":"../images/crudo.jpg",
+      "cantidad": 9
    },
    {
       "id":10,
       "nombre":"Cantimpalo Lario",
       "precio":3810,
-      "img":"../images/cantimpalo.jpg"
+      "img":"../images/cantimpalo.jpg",
+      "cantidad": 10
    },
    {
       "id":11,
       "nombre":"Holanda Varense",
       "precio":2900,
-      "img":"./images/varense.jpeg"
+      "img":"../images/varense.jpeg",
+      "cantidad": 11
    },
    {
       "id":12,
       "nombre":"Reggiano Silvia",
       "precio":3580,
-      "img":"./images/reggiano.jpg"
+      "img":"../images/reggiano.jpg",
+      "cantidad": 12
    }
 ]
-*/
