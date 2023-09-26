@@ -4,7 +4,6 @@ const verCarrito = document.querySelector("#verCarrito");
 const modalContainer = document.querySelector("#modal-container");
 const cantidadCarrito = document.querySelector("#cantidadCarrito");
 
-let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 productos.forEach((product) => {
 	let content = document.createElement("div");

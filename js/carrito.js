@@ -1,4 +1,4 @@
-
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 renderCarrito = () => {
     modalContainer.innerHTML = "";
@@ -28,18 +28,39 @@ renderCarrito = () => {
 		 <img src="${product.img}">
 		 <h3>${product.nombre}</h3>
 		 <p>${product.precio}$</p>
+         <span class="restar"> - </span>
          <p>Cantidad: ${product.cantidad}</p>
+         <span class="sumar"> + </span>
          <p>Total: ${product.cantidad * product.precio}</p>
+         <span class="delete-product"> ✖ </span>
 		`;
 
         modalContainer.append(carritoContent);
 
-        let eliminar = document.createElement("span");
-        eliminar.innerText = "✖";
-        eliminar.className = "delete-product";
-        carritoContent.append(eliminar);
+        let restar = carritoContent.querySelector(".restar");
 
-        eliminar.addEventListener("click", eliminarProducto);
+        restar.addEventListener("click", () => {
+            if(product.cantidad !== 1) {
+                product.cantidad--;  
+            }
+        renderCarrito();
+        })
+
+        let sumar = carritoContent.querySelector(".sumar");
+
+        sumar.addEventListener("click", () => {
+            product.cantidad++;  
+            renderCarrito();
+        });
+
+        let eliminar = carritoContent.querySelector(".delete-product");
+
+
+        eliminar.addEventListener("click", () => {
+            eliminarProducto(product.id);
+        });
+
+
     });
 
     const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad , 0);
@@ -54,14 +75,15 @@ renderCarrito = () => {
 
 verCarrito.addEventListener("click", renderCarrito);
 
-const eliminarProducto = () => {
-    const foundId = carrito.find((element) => element.id);
+const eliminarProducto = (id) => {
+    const foundId = carrito.find((element) => element.id === id);
 
     carrito = carrito.filter((carritoId) => {
     return carritoId !== foundId;
     });
 
    carritoCounter();
+   saveLocal();
    renderCarrito();
 };
 
