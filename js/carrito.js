@@ -51,6 +51,19 @@ renderCarrito = () => {
         sumar.addEventListener("click", () => {
             product.cantidad++;  
             renderCarrito();
+            
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 1500,
+              });
+
+              Toast.fire({
+                icon: 'success',
+                title: `Añadiste otro ${product.nombre} al carrito`,
+        });
+
         });
 
         let eliminar = carritoContent.querySelector(".delete-product");
@@ -58,6 +71,25 @@ renderCarrito = () => {
 
         eliminar.addEventListener("click", () => {
             eliminarProducto(product.id);
+
+            Swal.fire({
+                title: 'Estas seguro de eliminar el producto?',
+                text: "Si eliminas ahora ya no aparecera!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Si, eliminarlo!'
+              }).then((result) => {
+                if (result.isConfirmed) {
+                  Swal.fire(
+                    'Eliminado!',
+                    'El poducto ha sido eliminado',
+                    'success'
+                  )
+                }
+              })
+            
         });
 
 
@@ -67,7 +99,7 @@ renderCarrito = () => {
 
     const totalBuy = document.createElement("div");
     totalBuy.classname = "total-content";
-    totalBuy.innerHTML = `Total a pagar: ${total} $`;
+    totalBuy.innerHTML = `TOTAL A PAGAR : ${total} $`;
     modalContainer.append(totalBuy);
 
 

@@ -43,9 +43,22 @@ const getProducts = async () => {
 					precio: product.precio,
 					cantidad: product.cantidad,
 				});
-				console.log(carrito);
 				carritoCounter();
 				saveLocal();
+				"../data/productos.json"
+
+				Swal.fire({
+					position: 'top-end',
+					imageUrl: `../images/${product.img}`,
+					imageHeight: 100,
+					imageAlt: `Compro ${product.nombre}`,
+					title: `${product.nombre}`,
+					text: 'Se añadió a su carrito',
+					showConfirmButton: false,
+					timer: 1500,
+					width: '20rem',
+				  });
+
 			};
 		});
 	});
