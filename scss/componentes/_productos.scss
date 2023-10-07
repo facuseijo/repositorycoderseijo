@@ -73,7 +73,7 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-     position: relative;
+     position: relative; /*por lo visto hay una falla me muestra el modal en fixed y no quiere aparecer en relative no se guarda el cambio ni con git hub*/
      z-index: 9;
      top: 12vh;
      scrollbar-color: none;
@@ -125,20 +125,31 @@
 .delete-product {
      cursor: pointer;
 }
+
 /*CarritoCounter*/
 .cantidad-carrito {
-background-color:red;
-color:white;
-border-radius: 50%;
-font-size: 12px;
-padding:4px;
-top:35px;
-right: 14px;
-display: none;
+     background-color: red;
+     color: white;
+     border-radius: 50%;
+     font-size: 12px;
+     padding: 4px;
+     top: 35px;
+     right: 14px;
+     display: none;
 }
-.sumar{
-     cursor:pointer
+
+.sumar {
+     cursor: pointer;
 }
-.restar{
-     cursor:pointer
+
+.restar {
+     cursor: pointer;
+}
+
+.Pagar{
+     background-color: #4a8eed!important;
+     border: none;
+     border-radius: 8px;
+     color: #fff;
+     padding: 0.5rem;
 }
