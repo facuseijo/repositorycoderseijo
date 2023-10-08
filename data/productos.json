@@ -51,7 +51,7 @@
    },
    {
       "id":8,
-      "nombre":"Salame Cagnoli",
+      "nombre":"Salame Milan Cagnoli",
       "precio":4060,
       "img":"../images/milan.png",
       "cantidad": 8
@@ -65,21 +65,21 @@
    },
    {
       "id":10,
-      "nombre":"Cantimpalo Lario",
+      "nombre":"Cantimpalo Español Lario",
       "precio":3810,
       "img":"../images/cantimpalo.jpg",
       "cantidad": 10
    },
    {
       "id":11,
-      "nombre":"Holanda Varense",
+      "nombre":"Queso Holanda Varense",
       "precio":2900,
       "img":"../images/varense.jpeg",
       "cantidad": 11
    },
    {
       "id":12,
-      "nombre":"Reggiano Silvia",
+      "nombre":"Queso Reggiano Silvia",
       "precio":3580,
       "img":"../images/reggiano.jpg",
       "cantidad": 12
