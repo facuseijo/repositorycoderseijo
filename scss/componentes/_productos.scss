@@ -27,20 +27,21 @@
 
 .cardprod {
      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-     max-width: 300px;
-     margin: auto;
+     max-width: 180px;
+     margin: 5px;
+     padding: 7px 0 0 0;
      text-align: center;
      font-family: arial;
 
      img {
-          width: 95%;
+          width: 70%;
           height: 250px;
      }
 
      button {
           border: none;
           outline: 0;
-          padding: 12px;
+          padding: 6px;
           color: white;
           background-color: black;
           text-align: center;
@@ -73,7 +74,8 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-     position: relative; /*por lo visto hay una falla me muestra el modal en fixed y no quiere aparecer en relative no se guarda el cambio ni con git hub*/
+     position: relative;
+     /*por lo visto hay una falla me muestra el modal en fixed y no quiere aparecer en relative no se guarda el cambio ni con git hub*/
      z-index: 9;
      top: 12vh;
      scrollbar-color: none;
@@ -146,8 +148,8 @@
      cursor: pointer;
 }
 
-.Pagar{
-     background-color: #4a8eed!important;
+.Pagar {
+     background-color: #4a8eed !important;
      border: none;
      border-radius: 8px;
      color: #fff;
