@@ -1,3 +1,4 @@
+
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 renderCarrito = () => {
@@ -22,14 +23,15 @@ renderCarrito = () => {
 
 
     carrito.forEach((product) => {
+        const {img,precio,nombre,cantidad} = product
         let carritoContent = document.createElement("div")
         carritoContent.className = "modal-content";
         carritoContent.innerHTML = `
-		 <img src="${product.img}">
-		 <h3>${product.nombre}</h3>
-		 <p>${product.precio}$</p>
+		 <img src="${img}">
+		 <h3>${nombre}</h3>
+		 <p>${precio}$</p>
          <span class="restar"> - </span>
-         <p>Cantidad: ${product.cantidad}</p>
+         <p>Cantidad: ${cantidad}</p>
          <span class="sumar"> + </span>
          <p>Total: ${product.cantidad * product.precio}</p>
          <span class="delete-product"> ✖ </span> 
@@ -110,58 +112,6 @@ renderCarrito = () => {
     totalBuy.innerHTML = `TOTAL A PAGAR : ${total} $`;
     modalContainer.append(totalBuy);
 
-    //funcion final pagar
-    let Pagar = document.createElement("button");
-    Pagar.innerText = "PAGAR";
-    Pagar.className = "Pagar";
-
-    Pagar.addEventListener("click", () => {
-        function pagar() {
-
-            Swal.fire({
-                title: `¿Desea Finalizar la Compra?`,
-                icon: 'question',
-                showCancelButton: true,
-                confirmButtonColor: '#62371E',
-                cancelButtonColor: '#b09175',
-                cancelButtonText: 'Seguir comprando',
-                confirmButtonText: 'Pagar',
-            }).then((result) => {
-                if (result.isConfirmed) {
-
-                    localStorage.removeItem("carrito");
-                    carrit.innerHTML = 0;
-                    carritoContent.innerHTML = "";
-                    carritoContent.innerHTML += `
-    <p>
-        No hay productos en el carrito
-    </p>
-    `;
-
-                    const Toast = Swal.mixin({
-                        toast: true,
-                        position: 'center',
-                        showConfirmButton: false,
-                        timer: 1800,
-
-                    })
-
-                    Toast.fire({
-                        icon: 'success',
-                        title: `Su compra fue realizada con exito`,
-
-                    })
-
-                }
-
-            })
-
-        }
-        modalContainer.append(Pagar);
-        console.log(pagar)
-
-    });
-
 
     verCarrito.addEventListener("click", renderCarrito);
 
@@ -177,16 +127,54 @@ renderCarrito = () => {
         saveLocal();
         renderCarrito();
     };
+    
+    
+    // Función para pagar
+    function pagar(carritoContent) {
+        Swal.fire({
+            title: `¿Desea Finalizar la Compra?`,
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#62371E',
+            cancelButtonColor: '#b09175',
+            cancelButtonText: 'Seguir comprando',
+            confirmButtonText: 'Pagar',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                localStorage.removeItem("carrito");
+                carrito = []; // Vacía el carrito
+                carritoContent.innerHTML = ""; // Elimina contenido del carrito
+                carritoContent.innerHTML += `
+                <p>
+                    No hay productos en el carrito
+                </p>
+            `;
 
-    const carritoCounter = () => {
-        cantidadCarrito.style.display = "block";
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: 'center',
+                    showConfirmButton: false,
+                    timer: 1800,
+                });
 
-        const carritoLength = carrito.length;
+                Toast.fire({
+                    icon: 'success',
+                    title: `Su compra fue realizada con éxito`,
+                });
+            }
+        });
+    }
 
-        localStorage.setItem("carritoLength", JSON.stringify(carritoLength));
+    // Botón para pagar
+    const Pagar = document.createElement("button");
+    Pagar.innerText = "PAGAR";
+    Pagar.className = "Pagar";
+    Pagar.addEventListener("click", () => pagar(carritoContent));
+    modalContainer.append(Pagar);
 
-        cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));
-    };
+    
+
+  
 
     carritoCounter();
 }

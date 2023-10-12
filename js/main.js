@@ -1,4 +1,3 @@
-
 const shopContent = document.querySelector("#shopcontent");
 const verCarrito = document.querySelector("#verCarrito");
 const modalContainer = document.querySelector("#modal-container");
@@ -45,7 +44,6 @@ const getProducts = async () => {
 				});
 				carritoCounter();
 				saveLocal();
-				"../data/productos.json"
 
 				Swal.fire({
 					position: 'top-end',
@@ -69,3 +67,4 @@ getProducts();
 const saveLocal = () => {
 localStorage.setItem("carrito", JSON.stringify(carrito));
 };
+
